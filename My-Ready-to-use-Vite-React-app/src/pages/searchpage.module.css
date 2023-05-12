@@ -1,0 +1,262 @@
+@font-face {
+    font-family: sf-bold-1;
+    src: url("../assets//SFPRODISPLAYBOLD.OTF");
+  }
+  @font-face {
+    font-family: sf-meduim;
+    src: url("../assets//SFPRODISPLAYMEDIUM.OTF");
+  }
+  
+  @font-face {
+    font-family: sf-regular;
+    src: url("../assets//SFPRODISPLAYREGULAR.OTF");
+  }
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+    .Container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+
+    }
+
+    .NavContainer{
+        height: auto;
+        width: 100%;
+        background-color: chocolate;
+    }
+
+    .searchComponentContainer{
+        min-height: 12rem;
+        height: auto;
+        width: 100%;
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+
+    .jobsContainer{
+        min-height: 30rem;
+        max-height: auto;
+        width: 100%;
+        /* background-color: #f3f3f3; */
+    }
+
+    .notFoundContainer{
+        height: 15rem;
+        width: 15rem;
+        /* background-color: rgb(255, 154, 1); */
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .IMg{
+        height: 8rem;
+        width: 100%;
+    }
+    .Text{
+        height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.2rem;
+        /* background-color: cyan; */
+        font-family: sf-bold-1;
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    .Container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+
+    }
+
+    .NavContainer{
+        height: auto;
+        width: 100%;
+        background-color: chocolate;
+    }
+
+    .searchComponentContainer{
+        min-height: 12rem;
+        height: auto;
+        width: 100%;
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+
+    .jobsContainer{
+        min-height: 30rem;
+        max-height: auto;
+        width: 100%;
+        /* background-color: #f3f3f3; */
+    }
+
+    .notFoundContainer{
+        height: 15rem;
+        width: 15rem;
+        /* background-color: rgb(255, 154, 1); */
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .IMg{
+        height: 8rem;
+        width: 100%;
+    }
+    .Text{
+        height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.2rem;
+        /* background-color: cyan; */
+        font-family: sf-bold-1;
+        margin-top: 15px;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    .Container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+
+    }
+
+    .NavContainer{
+        height: auto;
+        width: 100%;
+        background-color: chocolate;
+    }
+
+    .searchComponentContainer{
+        min-height: 12rem;
+        height: auto;
+        width: 100%;
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+
+    .jobsContainer{
+        min-height: 30rem;
+        max-height: auto;
+        width: 100%;
+        /* background-color: #f3f3f3; */
+    }
+
+    .notFoundContainer{
+        height: 15rem;
+        width: 15rem;
+        /* background-color: rgb(255, 154, 1); */
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .IMg{
+        height: 8rem;
+        width: 100%;
+    }
+    .Text{
+        height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.2rem;
+        /* background-color: cyan; */
+        font-family: sf-bold-1;
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 1201px) {
+    
+    .Container{
+        height: 100vh;
+        width: 100vw;
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+
+    }
+
+    .NavContainer{
+        height: auto;
+        width: 100%;
+        background-color: chocolate;
+    }
+
+    .searchComponentContainer{
+        min-height: 12rem;
+        height: auto;
+        width: 100%;
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+
+    .jobsContainer{
+        min-height: 30rem;
+       height: auto;
+        width: 100%;
+        /* background-color: #f3f3f3; */
+        padding-top: 10px;
+    }
+    
+    .notFoundContainer{
+        height: 15rem;
+        width: 15rem;
+        /* background-color: rgb(255, 154, 1); */
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .IMg{
+        height: 8rem;
+        width: 100%;
+    }
+    .Text{
+        height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.2rem;
+        /* background-color: cyan; */
+        font-family: sf-bold-1;
+        margin-top: 15px;
+    }
+}

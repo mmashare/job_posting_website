@@ -1,0 +1,1139 @@
+
+@font-face {
+    font-family: Ariel-Small;
+    src: url("../assets//ARIAL.TTF");
+  }
+  
+  @font-face {
+    font-family: Ariel-Small-2;
+    src: url("../assets//ARIALBD.TTF");
+  }
+  
+  @font-face {
+    font-family: Ariel-Bold;
+    src: url("../assets//ARIALBD\ 1.TTF");
+  }
+  
+  @font-face {
+    font-family: Ariel-Bold-2;
+    src: url("../assets//ArialCE.ttf");
+  }
+  
+  @font-face {
+    font-family: Ariel-Bold-3;
+    src: url("../assets//arialceb.ttf");
+  }
+  
+  
+  @font-face {
+    font-family: Ariel-Bold-Black;
+    src: url("../assets//ArialCEMTBlack.ttf");
+  }
+  
+  
+  @font-face {
+    font-family: Ariel-Medium;
+    src: url("../assets//ArialMdm.ttf");
+  }
+  
+  
+  @font-face {
+    font-family: Ariel-Medium-2;
+    src: url("../assets//ARIALNB.TTF");
+  }
+  
+  @font-face {
+    font-family: sf-bold-1;
+    src: url("../assets//SFPRODISPLAYBOLD.OTF");
+  }
+  @font-face {
+    font-family: sf-meduim;
+    src: url("../assets//SFPRODISPLAYMEDIUM.OTF");
+  }
+  
+  @font-face {
+    font-family: sf-regular;
+    src: url("../assets//SFPRODISPLAYREGULAR.OTF");
+  }
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: brown; */
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbarContainer{
+    height: auto;
+    width: 100%;
+}
+
+.RecomendedJObContainerForBigScreen{
+    display: none;
+}
+
+.MainJObContainer{
+    min-height: 65rem;
+    height: auto;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.BannerIMgContainer{
+    height: 5rem;
+    width: 95%;
+    /* background-color: bisque; */
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    border-radius:"15px";
+    margin-top: 3px;
+   
+}
+.BannerImg{
+    height: 5rem;
+    width: 100%;
+    border-radius:"15px";
+    object-fit: cover;
+    
+}
+
+.FrontMainPageContainer{
+    height: auto;
+    min-height: 15rem;
+    width: 100%;
+    /* background-color: chartreuse; */
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.jobTitleContainer{
+    height: 5rem;
+    width: 100%;
+    /* background-color: rgb(53, 100, 6); */
+    display: flex;
+    flex-direction: row;
+}
+.companyLogoSection{
+    height: 5rem;
+    width: 30%;
+    /* background-color: rgb(175, 164, 7); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CompanyPRofileImg{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: auto;
+}
+.companyTitleSection{
+    height: 5rem;
+    width: 70%;
+    /* background-color: rgb(100, 206, 255); */
+}
+
+.jobTitle{
+    height: auto;
+    min-height: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 5px;
+    font-family: sf-meduim;
+    
+}
+.companyTitle{
+    height: auto;
+    min-height: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 1px;
+    margin-left: 5px;
+    font-weight: 100;
+    font-family: sf-meduim;
+}
+.parentContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.childdContainer1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0c0c0c; */
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.SimpleDescriptionSection{
+    min-height: 3rem;
+    height: auto;
+    width: 95%;
+    /* background-color: rgb(255, 0, 221); */
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.SimpleDescription{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+}
+
+.jobResponsiblitySection{
+    min-height: 3rem;
+    height: auto;
+    width: 95%;
+    /* background-color: rgb(143, 73, 255); */
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.jobResponsiblity{
+    font-size: 0.8rem;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    word-break: break-word;
+    font-family: sf-meduim;
+    color: #554e4e;
+}
+
+.RequireSkillSection{
+    min-height: 3rem;
+    height: auto;
+    width: 95%;
+    /* background-color: rgb(73, 213, 255); */
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.RequireSkill{
+    font-size: 0.8rem;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    word-break: break-word;
+    font-family: sf-meduim;
+    color: #554e4e;
+}
+.childdContainer2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0c0c0c; */
+    margin-right: 2px;
+}
+.CompanyDetailContainer{
+    height: auto;
+    min-height: 19rem;
+    width: 95%;
+    /* background-color: coral; */
+    margin-top: 3px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px #0c0c0c solid;
+}
+.companyDetailHeading{
+    height: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 5px;
+    height: 1.5rem;
+    width: 90%;
+    /* background-color: blueviolet; */
+    font-family: sf-meduim;
+    font-weight: 600;
+    
+
+}
+.Question{
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-right: auto;
+    font-weight: 300;
+    margin-top: 1px;
+    font-family: sf-meduim;
+    /* background-color: blueviolet; */
+    color: #0c0c0c;
+    
+}
+.Answer{
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: 1px;
+    font-weight: 100;
+    font-family: sf-meduim;
+    color: #554e4e;
+    /* background-color: blueviolet; */
+}
+.savedJObBTN{
+    height: 2rem;
+    width: 15rem;
+    border: 1px solid #0c0c0c;
+    color: #0c0c0c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-family: sf-meduim;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+
+.RecomendedJObContainerForSmallScreen{
+    min-height: 8rem;
+    height: auto;
+    width: 100%;
+    padding-bottom: 5px;
+    /* background-color: cadetblue; */
+}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: brown; */
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .navbarContainer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .RecomendedJObContainerForBigScreen{
+        display: none;
+    }
+    
+    .MainJObContainer{
+        min-height: 65rem;
+        height: auto;
+        width: 100%;
+        /* background-color: aqua; */
+        margin-top: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .BannerIMgContainer{
+        height: 9rem;
+        width: 95%;
+        /* background-color: bisque; */
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px;
+        border-radius:"15px";
+        margin-top: 3px;
+       
+    }
+    .BannerImg{
+        height: 9rem;
+        width: 100%;
+        border-radius:"15px";
+        object-fit: cover;
+        
+    }
+    
+    .FrontMainPageContainer{
+        height: auto;
+        min-height: 15rem;
+        width: 100%;
+        /* background-color: chartreuse; */
+        margin-top: 2px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .jobTitleContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: rgb(53, 100, 6); */
+        display: flex;
+        flex-direction: row;
+    }
+    .companyLogoSection{
+        height: 5rem;
+        width: 15%;
+        /* background-color: rgb(175, 164, 7); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .CompanyPRofileImg{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-left: auto;
+    }
+    .companyTitleSection{
+        height: 5rem;
+        width: 85%;
+        /* background-color: rgb(100, 206, 255); */
+    }
+    
+    .jobTitle{
+        height: auto;
+        min-height: 1rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 5px;
+        font-family: sf-meduim;
+        
+    }
+    .companyTitle{
+        height: auto;
+        min-height: 0.5rem;
+        font-size: 0.8rem;
+        margin-top: 1px;
+        margin-left: 5px;
+        font-weight: 100;
+        font-family: sf-meduim;
+    }
+    .parentContainer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .childdContainer1{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #0c0c0c; */
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    .SimpleDescriptionSection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(255, 0, 221); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .SimpleDescription{
+            font-size: 0.8rem;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 5px;
+            word-break: break-word;
+            font-family: sf-meduim;
+            color: #554e4e;
+    }
+    
+    .jobResponsiblitySection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(143, 73, 255); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .jobResponsiblity{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+    }
+    
+    .RequireSkillSection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(73, 213, 255); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    
+    .RequireSkill{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+    }
+    .childdContainer2{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #0c0c0c; */
+        margin-right: 2px;
+    }
+    .CompanyDetailContainer{
+        height: auto;
+        min-height: 19rem;
+        width: 95%;
+        /* background-color: coral; */
+        margin-top: 3px;
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px #0c0c0c solid;
+    }
+    .companyDetailHeading{
+        height: 2rem;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: 5px;
+        height: 1.5rem;
+        width: 90%;
+        /* background-color: blueviolet; */
+        font-family: sf-meduim;
+        font-weight: 600;
+        
+    
+    }
+    .Question{
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-right: auto;
+        font-weight: 300;
+        margin-top: 1px;
+        font-family: sf-meduim;
+        /* background-color: blueviolet; */
+        color: #0c0c0c;
+        
+    }
+    .Answer{
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-right: auto;
+        margin-top: 1px;
+        font-weight: 100;
+        font-family: sf-meduim;
+        /* background-color: blueviolet; */
+        color: #554e4e;
+    }
+    .savedJObBTN{
+        height: 2rem;
+        width: 25rem;
+        border: 1px solid #0c0c0c;
+        color: #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        font-family: sf-meduim;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+    }
+
+    .RecomendedJObContainerForSmallScreen{
+        min-height: 8rem;
+        height: auto;
+        width: 100%;
+        padding-bottom: 5px;
+        /* background-color: cadetblue; */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: brown; */
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .navbarContainer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .RecomendedJObContainerForBigScreen{
+        display: none;
+    }
+    
+    .MainJObContainer{
+        min-height: 65rem;
+        height: auto;
+        width: 100%;
+        /* background-color: aqua; */
+        margin-top: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .BannerIMgContainer{
+        height: 8rem;
+        width: 95%;
+        /* background-color: bisque; */
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px;
+        border-radius:"15px";
+        margin-top: 3px;
+       
+    }
+    .BannerImg{
+        height: 8rem;
+        width: 100%;
+        border-radius:"15px";
+        object-fit: cover;
+        
+    }
+    
+    .FrontMainPageContainer{
+        height: auto;
+        min-height: 15rem;
+        width: 100%;
+        /* background-color: chartreuse; */
+        margin-top: 2px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .jobTitleContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: rgb(53, 100, 6); */
+        display: flex;
+        flex-direction: row;
+    }
+    .companyLogoSection{
+        height: 5rem;
+        width: 15%;
+        /* background-color: rgb(175, 164, 7); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .CompanyPRofileImg{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-left: auto;
+    }
+    .companyTitleSection{
+        height: 5rem;
+        width: 85%;
+        /* background-color: rgb(100, 206, 255); */
+    }
+    
+    .jobTitle{
+        height: auto;
+        min-height: 1rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 5px;
+        font-family: sf-meduim;
+    }
+    .companyTitle{
+        height: auto;
+        min-height: 0.5rem;
+        font-size: 0.8rem;
+        margin-top: 1px;
+        margin-left: 5px;
+        font-weight: 100;
+        font-family: sf-meduim;
+    }
+    
+    .parentContainer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .childdContainer1{
+        height: auto;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #0c0c0c; */
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    .SimpleDescriptionSection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(255, 0, 221); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .SimpleDescription{
+            font-size: 0.8rem;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 5px;
+            word-break: break-word;
+            font-family: sf-meduim;
+            color: #554e4e;
+    }
+    
+    .jobResponsiblitySection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(143, 73, 255); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .jobResponsiblity{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+    }
+    
+    .RequireSkillSection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(73, 213, 255); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    
+    .RequireSkill{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+    }
+    
+    .childdContainer2{
+        height: auto;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #0c0c0c; */
+        margin-right: 2px;
+    }
+    .CompanyDetailContainer{
+        height: auto;
+        min-height: 19rem;
+        width: 95%;
+        /* background-color: coral; */
+        margin-top: 3px;
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px #0c0c0c solid;
+        border-left: 1px #0c0c0c solid;
+    }
+    .companyDetailHeading{
+        height: 2rem;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: 5px;
+        height: 1.5rem;
+        width: 90%;
+        /* background-color: blueviolet; */
+        font-family: sf-meduim;
+        font-weight: 600;
+        
+    
+    }
+    .Question{
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-right: auto;
+        font-weight: 300;
+        margin-top: 1px;
+        font-family: sf-meduim;
+        /* background-color: blueviolet; */
+        color: #0c0c0c;
+        
+    }
+    .Answer{
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-right: auto;
+        margin-top: 1px;
+        font-weight: 100;
+        font-family: sf-meduim;
+        /* background-color: blueviolet; */
+        color: #554e4e;
+    }
+    .savedJObBTN{
+        height: 2rem;
+        width: 15rem;
+        border: 1px solid #0c0c0c;
+        color: #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        font-family: sf-meduim;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+    }
+
+
+    .RecomendedJObContainerForSmallScreen{
+        min-height: 8rem;
+        height: auto;
+        width: 100%;
+        padding-bottom: 5px;
+        /* background-color: cadetblue; */
+    }
+}
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: brown; */
+        background-color: #f3f3f3;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    .navbarContainer{
+        height: auto;
+        width: 100%;
+    }
+    
+    .RecomendedJObContainerForBigScreen{
+        display: none;
+    }
+    
+    .MainJObContainer{
+        min-height: 65rem;
+        height: auto;
+        width: 100%;
+        /* background-color: aqua; */
+        margin-top: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .BannerIMgContainer{
+        height: 9rem;
+        width: 95%;
+        /* background-color: bisque; */
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px;
+        border-radius:"15px";
+        margin-top: 3px;
+       
+    }
+    .BannerImg{
+        height: 9rem;
+        width: 100%;
+        border-radius:"15px";
+        object-fit: cover;
+        
+    }
+    
+    .FrontMainPageContainer{
+        height: auto;
+        min-height: 15rem;
+        width: 100%;
+        /* background-color: chartreuse; */
+        margin-top: 2px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .jobTitleContainer{
+        height: 5rem;
+        width: 100%;
+        /* background-color: rgb(53, 100, 6); */
+        display: flex;
+        flex-direction: row;
+    }
+    .companyLogoSection{
+        height: 5rem;
+        width: 15%;
+        /* background-color: rgb(175, 164, 7); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .CompanyPRofileImg{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-left: auto;
+    }
+    .companyTitleSection{
+        height: 5rem;
+        width: 85%;
+        /* background-color: rgb(100, 206, 255); */
+    }
+    
+    .jobTitle{
+        height: auto;
+        min-height: 1rem;
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-left: 5px;
+        font-family: sf-meduim;
+        
+    }
+    .companyTitle{
+        height: auto;
+        min-height: 0.5rem;
+        font-size: 0.8rem;
+        margin-top: 1px;
+        margin-left: 5px;
+        font-weight: 300;
+        font-family: sf-meduim;
+    }
+    
+    .parentContainer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .childdContainer1{
+        height: auto;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #0c0c0c; */
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    .SimpleDescriptionSection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(255, 0, 221); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .SimpleDescription{
+            font-size: 0.8rem;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 5px;
+            word-break: break-word;
+            font-family: sf-meduim;
+            color: #554e4e;
+    }
+    
+    .jobResponsiblitySection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(143, 73, 255); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .jobResponsiblity{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+    }
+    
+    .RequireSkillSection{
+        min-height: 3rem;
+        height: auto;
+        width: 95%;
+        /* background-color: rgb(73, 213, 255); */
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    
+    .RequireSkill{
+        font-size: 0.8rem;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        /* break-all -> more like chinese, korean,japnese lang ke use hota hai,break-word english me use hota hai */
+        word-break: break-word;
+        font-family: sf-meduim;
+        color: #554e4e;
+    }
+    
+    .childdContainer2{
+        height: auto;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #0c0c0c; */
+        margin-right: 2px;
+    }
+    .CompanyDetailContainer{
+        height: auto;
+        min-height: 19rem;
+        width: 95%;
+        /* background-color: coral; */
+        margin-top: 3px;
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px #0c0c0c solid;
+        border-left: 1px #0c0c0c solid;
+    }
+    .companyDetailHeading{
+        height: 2rem;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: 5px;
+        height: 1.5rem;
+        width: 90%;
+        /* background-color: blueviolet; */
+        font-family: sf-meduim;
+        font-weight: 600;
+        
+    
+    }
+    .Question{
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-right: auto;
+        font-weight: 300;
+        margin-top: 1px;
+        font-family: sf-meduim;
+        /* background-color: blueviolet; */
+        color: #0c0c0c;
+        
+    }
+    .Answer{
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 15px;
+        margin-right: auto;
+        margin-top: 1px;
+        font-weight: 100;
+        font-family: sf-meduim;
+        /* background-color: blueviolet; */
+        color: #554e4e;
+    }
+    
+    .savedJObBTN{
+        height: 2rem;
+        width: 15rem;
+        border: 1px solid #0c0c0c;
+        color: #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        font-family: sf-meduim;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+    }
+
+    .RecomendedJObContainerForSmallScreen{
+        min-height: 8rem;
+        height: auto;
+        width: 100%;
+        padding-bottom: 5px;
+        /* background-color: cadetblue; */
+    }
+}

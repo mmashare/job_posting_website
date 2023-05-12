@@ -1,0 +1,223 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: aquamarine; */
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+    }
+
+    .NavbarContainer{
+        height: 4rem;
+        width: 100%;
+        background-color: bisque;
+    }
+
+    .SearchContainer{
+        height: 12rem;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+    .MainContainer{
+        height: 25rem;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+        background-color: #f3f3f3;
+    }
+    .SidebarContainer{
+        height: 4rem;
+        width: 100%;
+        /* background-color: rgb(247, 141, 11); */
+        background-color: #f3f3f3;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .JobContainer{
+        height: 21rem;
+        width: 100%;
+        background-color: #e8eaee;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: aquamarine; */
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+    }
+
+    .NavbarContainer{
+        height: 4rem;
+        width: 100%;
+        background-color: bisque;
+    }
+
+    .SearchContainer{
+        height: 12rem;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+    .MainContainer{
+        height: 25rem;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+    }
+    .SidebarContainer{
+        height: 4rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .JobContainer{
+        height: 21rem;
+        width: 100%;
+        background-color: #e8eaee;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: aquamarine; */
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+    }
+
+    .NavbarContainer{
+        height: 4rem;
+        width: 100%;
+        background-color: bisque;
+    }
+
+    .SearchContainer{
+        height: 12rem;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+    .MainContainer{
+        height: 25rem;
+        width: 100%;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .SidebarContainer{
+        height: 100%;
+        width: 20%;
+        background-color: #ffffff;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .JobContainer{
+        min-height: 25rem;
+        max-height: auto;
+        width: 80%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: aquamarine; */
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       
+        overflow-x:hidden;
+    }
+
+    .NavbarContainer{
+        height: 4rem;
+        width: 100%;
+        background-color: bisque;
+    }
+
+    .SearchContainer{
+        height: 12rem;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+        background-image: url("../assets//wallpaper1.png");
+        background-size: cover;
+        background-blend-mode: hue;
+    }
+    .MainContainer{
+        min-height: 25rem;
+        max-height: auto;
+        width: 100%;
+        /* background-color: rgb(87, 51, 8); */
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .SidebarContainer{
+        height: 100%;
+        width: 20%;
+        /* background-color: rgb(247, 141, 11); */
+        background-color: #ffffff;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .JobContainer{
+        min-height: 25rem;
+        max-height: auto;
+        width: 80%;
+        background-color: #ffffff;
+        /* overflow-y:scroll; */
+    }
+}

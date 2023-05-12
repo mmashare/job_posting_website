@@ -1,0 +1,939 @@
+
+
+@font-face {
+    font-family: sf-bold-1;
+    src: url("../assets//SFPRODISPLAYBOLD.OTF");
+  }
+  @font-face {
+    font-family: sf-meduim;
+    src: url("../assets//SFPRODISPLAYMEDIUM.OTF");
+  }
+  
+  @font-face {
+    font-family: sf-regular;
+    src: url("../assets//SFPRODISPLAYREGULAR.OTF");
+  }
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+    .container{
+        height: 10rem;
+        width: 90%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        border: #e4e9e7 0.6px solid;
+    }
+
+    .container:hover{
+        background-color: #e4e9e7;
+        border: none;
+    }
+
+    .wrapper1{
+        height: 4.5rem;
+        width: 100%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .logoContainer{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-left: 4px;
+        margin-right: 2px;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .Img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .smallWrapper{
+        height: 4.3rem;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ff3e3e; */
+       margin-left: 2px;
+    }
+
+    .titleContainer{
+        height: 2.3rem;
+        width: 100%;
+        /* background-color: rgb(116, 119, 118); */
+        display: flex;
+        /* align-items: center; */
+        
+    }
+    .JobHeading{
+        height: 2.2rem;
+        width: 100%;
+        font-size:1.2rem;
+        font-family: sf-meduim;
+        font-weight: 400;
+        padding-left: 4px;
+        padding-right: 2px;
+        margin-top: 14px;
+
+        
+    }
+    .companyNameContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(167, 170, 0); */
+        /* border: 1px solid #c0c0c0; */
+        display: flex;
+        align-items: center;
+    }
+    .companyName{
+        /* height: 2rem;
+        width: 100%; */
+        /* border: 1px solid #ff3e3e; */
+        color: #636060;
+        font-size: 0.7rem;
+        font-family: sf-meduim;
+        padding-left: 4px;
+        margin-top: 0.5px;
+        
+    }
+
+    .smallScreenSaveBTn{
+        height: 3rem;
+        width: 2rem;
+        /* background-color: burlywood; */
+        /* border: #ff3e3e 1px solid; */
+        margin-left: auto;
+        margin-right: 2px;
+        
+    }
+    .realBtn{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 6px;
+        
+    }
+    .wrapper2{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(1, 158, 106); */
+        display: flex;
+        margin-top: 1px;
+        flex-direction: row;    
+        align-items: center;
+    }
+
+    .jobTypeContainer{
+        height: 1.8rem;
+        width: 4rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #ccf0fa;
+        border-radius: 5px;
+    }
+    .jobType{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+        font-family: sf-meduim;
+        color: #59a2c4;
+    }
+
+    .experienceContainer{
+        height: 1.8rem;
+        width: 6.5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #dffcea;
+        border-radius: 5px;
+    }
+
+    .experience{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #5baa73;
+    }
+
+    .employmentContainer{
+        height: 1.8rem;
+        width: 5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #efeafa;
+        border-radius: 5px;
+    }
+
+    .employment{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #917ace;
+    }
+
+    .wrapper3{
+        height: 3rem;
+        width: 100%;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .locationContainer{
+        height: 3rem;
+        width: 8rem;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+    }
+
+    .location{
+        
+        font-size: 15px;
+        padding-left: 8px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .jobTimeContainer{
+        height: 3rem;
+        width: 8rem;
+        /* background-color: rgb(151, 87, 3); */
+        display: flex;
+        align-items: center;
+    }
+
+    .jobTime{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 10px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .BigScreenJobSaveBTN{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px)  {
+
+    .container{
+        height: 10rem;
+        width: 90%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 5px;
+         margin-top: 1rem;
+         margin-left: auto;
+         margin-right: auto;
+         border: #e4e9e7 0.6px solid;
+    }
+
+    .container:hover{
+        background-color: #e4e9e7;
+        border: none;
+    }
+
+    .wrapper1{
+        height: 4.5rem;
+        width: 100%;
+        /* background-color: aquamarine; */
+       
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .logoContainer{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-left: 4px;
+        margin-right: 2px;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .Img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .smallWrapper{
+        height: 4.3rem;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ff3e3e; */
+       margin-left: 2px;
+    }
+
+    .titleContainer{
+        height: 2.3rem;
+        width: 100%;
+        /* background-color: rgb(116, 119, 118); */
+        display: flex;
+        /* align-items: center; */
+        
+    }
+    .JobHeading{
+        height: 2.2rem;
+        width: 100%;
+        font-size:1.2rem;
+        font-family: sf-meduim;
+        font-weight: 400;
+        padding-left: 4px;
+        padding-right: 2px;
+        margin-top: 14px;
+
+        
+    }
+
+    .companyNameContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(167, 170, 0); */
+        /* border: 1px solid #c0c0c0; */
+        display: flex;
+        align-items: center;
+    }
+    .companyName{
+        /* height: 2rem;
+        width: 100%; */
+        /* border: 1px solid #ff3e3e; */
+        color: #636060;
+        font-size: 0.7rem;
+        font-family: sf-meduim;
+        padding-left: 4px;
+        margin-top: 0.5px;
+        
+    }
+
+    .smallScreenSaveBTn{
+        height: 3rem;
+        width: 2rem;
+        /* background-color: burlywood; */
+        /* border: #ff3e3e 1px solid; */
+        margin-left: auto;
+        margin-right: 2px;
+        
+    }
+    .realBtn{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 6px;
+        
+    }
+   
+
+    
+
+    .wrapper2{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(1, 158, 106); */
+        display: flex;
+        margin-top: 1px;
+        flex-direction: row;    
+        align-items: center;
+    }
+
+    .jobTypeContainer{
+        height: 1.8rem;
+        width: 4rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #ccf0fa;
+        border-radius: 5px;
+    }
+    .jobType{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+        font-family: sf-meduim;
+        color: #59a2c4;
+    }
+
+    .experienceContainer{
+        height: 1.8rem;
+        width: 6.5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #dffcea;
+        border-radius: 5px;
+    }
+
+    .experience{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #5baa73;
+    }
+
+    .employmentContainer{
+        height: 1.8rem;
+        width: 5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #efeafa;
+        border-radius: 5px;
+    }
+
+    .employment{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #917ace;
+    }
+
+    .wrapper3{
+        height: 3rem;
+        width: 100%;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .locationContainer{
+        height: 3rem;
+        width: 8rem;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+    }
+
+    .location{
+        
+        font-size: 15px;
+        padding-left: 8px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .jobTimeContainer{
+        height: 3rem;
+        width: 8rem;
+        /* background-color: rgb(151, 87, 3); */
+        display: flex;
+        align-items: center;
+    }
+
+    .jobTime{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 10px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .BigScreenJobSaveBTN{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        height: 10rem;
+        width: 90%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 5px;
+         margin-top: 1rem;
+         margin-left: auto;
+         margin-right: auto;
+         border: #e4e9e7 0.6px solid;
+    }
+
+    .container:hover{
+        background-color: #e4e9e7;
+        border: none;
+    }
+
+    .wrapper1{
+        height: 4.5rem;
+        width: 100%;
+        /* background-color: aquamarine; */
+       
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .logoContainer{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-left: 4px;
+        margin-right: 2px;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .Img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .smallWrapper{
+        height: 4.3rem;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ff3e3e; */
+       margin-left: 2px;
+    }
+
+    .titleContainer{
+        height: 2.3rem;
+        width: 100%;
+        /* background-color: rgb(116, 119, 118); */
+        display: flex;
+        /* align-items: center; */
+        
+    }
+    .JobHeading{
+        height: 2.2rem;
+        width: 100%;
+        font-size:1.2rem;
+        font-family: sf-meduim;
+        font-weight: 400;
+        padding-left: 4px;
+        padding-right: 2px;
+        margin-top: 14px;
+
+        
+    }
+
+    .companyNameContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(167, 170, 0); */
+        /* border: 1px solid #c0c0c0; */
+        display: flex;
+        align-items: center;
+    }
+    .companyName{
+        /* height: 2rem;
+        width: 100%; */
+        /* border: 1px solid #ff3e3e; */
+        color: #636060;
+        font-size: 0.7rem;
+        font-family: sf-meduim;
+        padding-left: 4px;
+        margin-top: 0.5px;
+        
+    }
+
+    .smallScreenSaveBTn{
+        height: 3rem;
+        width: 2rem;
+        /* background-color: burlywood; */
+        /* border: #ff3e3e 1px solid; */
+        margin-left: auto;
+        margin-right: 2px;
+        
+    }
+    .realBtn{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 6px;
+        
+    }
+   
+
+    
+
+    .wrapper2{
+        height: 3rem;
+        width: 100%;
+        /* background-color: rgb(1, 158, 106); */
+        display: flex;
+        margin-top: 1px;
+        flex-direction: row;    
+        align-items: center;
+    }
+
+    .jobTypeContainer{
+        height: 1.8rem;
+        width: 4rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #ccf0fa;
+        border-radius: 5px;
+    }
+    .jobType{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+        font-family: sf-meduim;
+        color: #59a2c4;
+    }
+
+    .experienceContainer{
+        height: 1.8rem;
+        width: 6.5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #dffcea;
+        border-radius: 5px;
+    }
+
+    .experience{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #5baa73;
+    }
+
+    .employmentContainer{
+        height: 1.8rem;
+        width: 5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #efeafa;
+        border-radius: 5px;
+    }
+
+    .employment{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #917ace;
+    }
+
+    .wrapper3{
+        height: 3rem;
+        width: 100%;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .locationContainer{
+        height: 3rem;
+        width: 8rem;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+    }
+
+    .location{
+        
+        font-size: 15px;
+        padding-left: 8px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .jobTimeContainer{
+        height: 3rem;
+        width: 8rem;
+        /* background-color: rgb(151, 87, 3); */
+        display: flex;
+        align-items: center;
+    }
+
+    .jobTime{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 10px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .BigScreenJobSaveBTN{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 3.8rem;
+        width: 95%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        border-radius: 5px;
+         margin-top: 1rem;
+         margin-left: auto;
+         margin-right: auto;
+         border: #e4e9e7 0.6px solid;
+    
+    }
+
+    .container:hover{
+        background-color: #e4e9e7;
+        border: none;
+    }
+
+    .wrapper1{
+        height: 3.6rem;
+        width: 30%;
+        /* background-color: aquamarine; */
+       
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .logoContainer{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 2px;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .Img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .smallWrapper{
+        height: 4rem;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #ff3e3e; */
+       margin-left: 2px;
+    }
+
+    .titleContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(116, 119, 118); */
+        display: flex;
+        /* align-items: center; */
+        
+    }
+    .JobHeading{
+        height: 2rem;
+        width: 100%;
+        font-size:1.2rem;
+        font-family: sf-meduim;
+        font-weight: 400;
+        padding-left: 4px;
+        padding-right: 2px;
+        margin-top: 14px;      
+    }
+
+    .companyNameContainer{
+        height: 2rem;
+        width: 100%;
+        /* background-color: rgb(167, 170, 0); */
+        /* border: 1px solid #c0c0c0; */
+        display: flex;
+        align-items: center;
+    }
+    .companyName{
+        /* height: 2rem;
+        width: 100%; */
+        /* border: 1px solid #ff3e3e; */
+        color: #636060;
+        font-size: 0.7rem;
+        font-family: sf-meduim;
+        padding-left: 4px;
+        margin-top: 0.5px;
+        
+    }
+
+    .smallScreenSaveBTn{
+        height: 3rem;
+        width: 2rem;
+        /* background-color: burlywood; */
+        /* border: #ff3e3e 1px solid; */
+        margin-left: auto;
+        margin-right: 2px;
+        display: none;
+        
+    }
+    .realBtn{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 6px;
+        
+    }
+   
+
+    
+
+    .wrapper2{
+        height: 3rem;
+        width: 35%;
+        /* background-color: rgb(1, 158, 106);  */
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row;    
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+
+    .jobTypeContainer{
+        height: 1.8rem;
+        width: 4rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #ccf0fa;
+        border-radius: 5px;
+    }
+    .jobType{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px;
+        font-family: sf-meduim;
+        color: #59a2c4;
+    }
+
+    .experienceContainer{
+        height: 1.8rem;
+        width: 6.5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #dffcea;
+        border-radius: 5px;
+    }
+
+    .experience{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #5baa73;
+    }
+
+    .employmentContainer{
+        height: 1.8rem;
+        width: 5rem;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #efeafa;
+        border-radius: 5px;
+    }
+
+    .employment{
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sf-meduim;
+        color: #917ace;
+    }
+
+    .wrapper3{
+        height: 3rem;
+        width: 35%;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        /* justify-content:space-between; */
+    }
+
+    .locationContainer{
+        height: 3rem;
+        width: 9rem;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+    }
+
+    .location{
+        
+        font-size: 15px;
+        padding-left: 2px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jobTimeContainer{
+        height: 3rem;
+        width: 6rem;
+        /* background-color: rgb(151, 87, 3); */
+        display: flex;
+        align-items: center;
+    }
+
+    .jobTime{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: 10px;
+        font-family: sf-meduim;
+        /* color: #7f828d; */
+        color: #0c0c0c;
+    }
+
+    .BigScreenJobSaveBTN{
+        height: 3rem;
+        width: 2rem;
+        /* background-color: rgb(75, 42, 0); */
+        margin-left: auto;
+        margin-right: 4px;
+       
+    }
+
+    .realBtn{
+    height: 1.7rem;
+    width: 1.7rem;
+    /* margin-top: 6px; */
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+    margin-bottom: auto;
+    }
+}
+

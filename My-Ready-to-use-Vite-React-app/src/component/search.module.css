@@ -1,0 +1,440 @@
+
+@font-face {
+    font-family: sf-bold-1;
+    src: url("../assets//SFPRODISPLAYBOLD.OTF");
+  }
+  @font-face {
+    font-family: sf-meduim;
+    src: url("../assets//SFPRODISPLAYMEDIUM.OTF");
+  }
+  
+  @font-face {
+    font-family: sf-regular;
+    src: url("../assets//SFPRODISPLAYREGULAR.OTF");
+  }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        /* padding-top: 2rem; */
+        /* background-color: rgb(15, 15, 94); */
+    }
+
+    .wrapper{
+        height: 8rem;
+        width: 100%;
+        /* background-color: rgb(136, 136, 172); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        /* padding-top: 3rem; */
+        
+    }
+
+    .ContainerinputOFJobTitle{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+    }
+
+    .searchIcon{
+        height: 1.3rem;
+        width: 1.3rem;
+        background-color: #f8f8f8;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1px;
+        
+    }
+
+    .inputOFJobTitle{
+        height: 2rem;
+        width: 14rem;
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        background-color: none;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+    }
+    .ContainerinputOFLocation{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+        
+    }
+
+    .homeIcon{
+        height: 1.1rem;
+        width: 1.1rem;
+        background-color: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 3px;
+    }
+    .inputOFLocation{
+        height: 2rem;
+        width: 14rem;
+        
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+        
+    }
+    
+    .searchBTn{
+        height: 2rem;
+        width: auto;
+        min-width: 6rem;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sf-meduim;
+        font-weight: 300;
+        outline: none;
+        border: none;
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f8f8f8;
+        
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding-top: 2rem;
+        /* background-color: rgb(15, 15, 94); */
+    }
+
+    .wrapper{
+        height: 8rem;
+        width: 100%;
+        /* background-color: rgb(136, 136, 172); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 3rem; */
+        
+    }
+
+    .ContainerinputOFJobTitle{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+    }
+
+    .searchIcon{
+        height: 1.3rem;
+        width: 1.3rem;
+        background-color: #f8f8f8;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1px;
+        
+    }
+
+    .inputOFJobTitle{
+        height: 2rem;
+        width: 14rem;
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        background-color: none;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+    }
+    .ContainerinputOFLocation{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+        
+    }
+
+    .homeIcon{
+        height: 1.1rem;
+        width: 1.1rem;
+        background-color: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 3px;
+    }
+    .inputOFLocation{
+        height: 2rem;
+        width: 14rem;
+        
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+        
+    }
+    
+    .searchBTn{
+        height: 2rem;
+        width: auto;
+        min-width: 6rem;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sf-meduim;
+        font-weight: 300;
+        outline: none;
+        border: none;
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f8f8f8;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding-top: 2rem;
+        /* background-color: rgb(15, 15, 94); */
+    }
+
+    .wrapper{
+        height: 4rem;
+        width: 100%;
+        /* background-color: #f3f3f3; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 3rem; */
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+        
+    }
+
+    .ContainerinputOFJobTitle{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+    }
+
+    .searchIcon{
+        height: 1.3rem;
+        width: 1.3rem;
+        background-color: #f8f8f8;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1px;
+        
+    }
+
+    .inputOFJobTitle{
+        height: 2rem;
+        width: 14rem;
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        background-color: none;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+    }
+    .ContainerinputOFLocation{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+        
+    }
+
+    .homeIcon{
+        height: 1.1rem;
+        width: 1.1rem;
+        background-color: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 3px;
+    }
+    .inputOFLocation{
+        height: 2rem;
+        width: 14rem;
+        
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+        
+    }
+    
+    .searchBTn{
+        height: 2.3rem;
+        width: auto;
+        min-width: 6rem;
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sf-meduim;
+        font-weight: 300;
+        outline: none;
+        border: none;
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f8f8f8;
+    }
+
+}
+
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding-top: 2rem;
+        /* background-color: rgb(15, 15, 94); */
+    }
+
+    .wrapper{
+        height: 8rem;
+        width: 100%;
+        /* background-color: rgb(136, 136, 172); */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 3rem; */
+        
+    }
+
+    .ContainerinputOFJobTitle{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+    }
+
+    .searchIcon{
+        height: 1.3rem;
+        width: 1.3rem;
+        background-color: #f8f8f8;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1px;
+        
+    }
+
+    .inputOFJobTitle{
+        height: 2rem;
+        width: 14rem;
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        background-color: none;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+    }
+    .ContainerinputOFLocation{
+        height: 2.1rem;
+        width: 16rem;
+        background-color: #f8f8f8;
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
+        
+    }
+
+    .homeIcon{
+        height: 1.1rem;
+        width: 1.1rem;
+        background-color: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 3px;
+    }
+    .inputOFLocation{
+        height: 2rem;
+        width: 14rem;
+        
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 3px;
+        outline: none;
+        border: none;
+        font-family: sf-meduim;
+        font-weight: 500;
+        
+    }
+    
+    .searchBTn{
+        height: 2.3rem;
+        width: auto;
+        min-width: 6rem;
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sf-meduim;
+        font-weight: 300;
+        outline: none;
+        border: none;
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f8f8f8;
+    }    
+}

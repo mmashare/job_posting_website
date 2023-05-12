@@ -1,0 +1,818 @@
+
+@font-face {
+    font-family: sf-bold-1;
+    src: url("../assets//SFPRODISPLAYBOLD.OTF");
+  }
+  @font-face {
+    font-family: sf-meduim;
+    src: url("../assets//SFPRODISPLAYMEDIUM.OTF");
+  }
+  
+  @font-face {
+    font-family: sf-regular;
+    src: url("../assets//SFPRODISPLAYREGULAR.OTF");
+  }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+    .container{
+        height: 100%;
+        width: 100%;
+        /* background-color: rgb(98, 48, 145); */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x:hidden;
+        box-sizing: border-box;
+    }
+    .LogoContainer{
+        height: 100%;
+        width: 7.5rem;
+        /* background-color: rgb(2, 156, 149); */
+        display: flex;
+        /* align-items: center; */
+      
+    }
+    .Logoo{
+        height: 3.5rem;
+        width: 7.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .ProfileContainer{
+        height: 100%;
+        width: 11rem;
+        /* background-color: aqua; */
+        margin-right: 2%;
+        cursor: pointer;
+ 
+    }
+    .ProfileImgContainer{
+        height: 2.5rem;
+        width: 2.5rem;
+        /* background-color: rgb(79, 112, 112); */
+        border-radius: 50%;
+        margin-right: 2%;
+        margin-left: auto;
+        margin-top: 0.7rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        
+
+    }
+    .ProfileImg{
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .ProfileOptionContainer{
+        background-color: #94a3b8;
+        height: 4rem;
+        width: 8rem;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top:0 ;
+        margin-top: 3.5rem;
+        margin-right: 3%;
+        border-radius: 4px;
+       
+    }
+
+    .MyProfileOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-top: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyProfileOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .MyCompanyOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyCompanyOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .LogoutOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-bottom: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+
+    .LogoutOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+
+    .BtnContainer{
+        height: 2.1rem;
+        width: 11rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:auto;
+        margin-bottom: auto;
+        margin-right: 1%;
+        /* margin-left: 1%; */
+        border-radius: 3px;
+        border: none;
+        border: 1px #111727 solid;
+    }
+
+    .LoginBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiLoginBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .SignupBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #e2e8f0; */
+        /* background-color: #94a3b8; */
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiSignupBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */ 
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+
+    .container{
+        height: 100%;
+        width: 100%;
+        /* background-color: rgb(98, 48, 145); */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x:hidden;
+        box-sizing: border-box;
+    }
+    .LogoContainer{
+        height: 100%;
+        width: 8rem;
+        /* background-color: rgb(2, 156, 149); */
+        display: flex;
+        /* align-items: center; */
+      
+    }
+    .Logoo{
+        height: 3.5rem;
+        width: 7.8rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .ProfileContainer{
+        height: 100%;
+        width: 11rem;
+        /* background-color: aqua; */
+        margin-right: 2%;
+        cursor: pointer;
+    }
+    .ProfileImgContainer{
+        height: 2.5rem;
+        width: 2.5rem;
+        /* background-color: rgb(79, 112, 112); */
+        border-radius: 50%;
+        margin-right: 2%;
+        margin-left: auto;
+        margin-top: 0.7rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .ProfileImg{
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+
+    .ProfileOptionContainer{
+        background-color: #94a3b8;
+        height: 4rem;
+        width: 8rem;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top:0 ;
+        margin-top: 3.5rem;
+        margin-right: 3%;
+        border-radius: 4px;
+        
+
+    }
+
+    .MyProfileOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-top: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyProfileOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .MyCompanyOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyCompanyOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .LogoutOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-bottom: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+
+    .LogoutOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+
+    .BtnContainer{
+        height: 2.1rem;
+        width: 11rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:auto;
+        margin-bottom: auto;
+        margin-right: 5%;
+        /* margin-left: 1%; */
+        border-radius: 3px;
+        border: none;
+        outline: #111727 1px solid;
+    }
+
+    .LoginBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #f3f3f3; */
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiLoginBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .SignupBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiSignupBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #f3f3f3; */
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    
+    .container{
+        height: 100%;
+        width: 100%;
+        /* background-color: rgb(98, 48, 145); */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x:hidden;
+        box-sizing: border-box;
+    }
+    .LogoContainer{
+        height: 100%;
+        width: 9rem;
+        /* background-color: rgb(2, 156, 149); */
+        display: flex;
+        align-items: center;
+      
+    }
+    .Logoo{
+        height: 3.5rem;
+        width: 8.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .ProfileContainer{
+        height: 100%;
+        width: 11rem;
+        /* background-color: aqua; */
+        margin-right: 2%;
+        cursor: pointer;
+    }
+    .ProfileImgContainer{
+        height: 2.5rem;
+        width: 2.5rem;
+        /* background-color: rgb(79, 112, 112); */
+        border-radius: 50%;
+        margin-right: 2%;
+        margin-left: auto;
+        margin-top: 0.7rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .ProfileImg{
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .ProfileOptionContainer{
+        background-color: #94a3b8;
+        height: 4rem;
+        width: 8rem;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top:0 ;
+        margin-top: 3.5rem;
+        margin-right: 3%;
+        border-radius: 4px;
+        
+
+    }
+
+    .MyProfileOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-top: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyProfileOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .MyCompanyOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyCompanyOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .LogoutOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-bottom: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+
+    .LogoutOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+
+    .BtnContainer{
+        height: 2.1rem;
+        width: 11rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:auto;
+        margin-bottom: auto;
+        margin-right: 5%;
+        /* margin-left: 1%; */
+        border-radius: 3px;
+        border: 1px #111727 solid;
+    }
+
+    .LoginBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #f3f3f3; */
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiLoginBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .SignupBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiSignupBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #f3f3f3; */
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+@media only screen and (min-width: 1201px){
+
+    .container{
+        height: 100%;
+        width: 100%;
+        /* background-color: rgb(98, 48, 145); */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x:hidden;
+        box-sizing: border-box;
+    }
+    .LogoContainer{
+        height: 100%;
+        width: 9rem;
+        /* background-color: rgb(2, 156, 149); */
+        display: flex;
+        align-items: center;
+      
+    }
+    .Logoo{
+        height: 3.5rem;
+        width: 8.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .ProfileContainer{
+        height: 100%;
+        width: 11rem;
+        /* background-color: aqua; */
+        margin-right: 2%;
+        cursor: pointer;
+    }
+    .ProfileImgContainer{
+        height: 2.5rem;
+        width: 2.5rem;
+        /* background-color: rgb(79, 112, 112); */
+        border-radius: 50%;
+        margin-right: 2%;
+        margin-left: auto;
+        margin-top: 0.7rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .ProfileImg{
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .ProfileOptionContainer{
+        background-color: #94a3b8;
+        height: 4rem;
+        width: 8rem;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top:0 ;
+        margin-top: 3.5rem;
+        margin-right: 3%;
+        border-radius: 4px;
+        
+
+    }
+
+    .MyProfileOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-top: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyProfileOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .MyCompanyOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+    .MyCompanyOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+    .LogoutOption{
+        margin: 0px;
+        height: 2rem;
+        width: 8rem;
+        background-color: #f3f3f3;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        /* font-family: NeueHaas-small; */
+        font-family: sf-meduim;
+        font-weight: 700;
+        border-bottom: 1px solid #b9b0b0;
+        border-left: 1px solid #b9b0b0;
+        border-right: 1px solid #b9b0b0;
+    }
+
+    .LogoutOption:hover{
+        background-color: #111727;
+        color: #f3f3f3;
+    }
+
+    .BtnContainer{
+        height: 2.1rem;
+        width: 11rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:auto;
+        margin-bottom: auto;
+        margin-right: 5%;
+        /* margin-left: 1%; */
+        border-radius: 3px;
+        border: 1px #111727 solid;
+    }
+
+    .LoginBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #f3f3f3; */
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiLoginBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        margin-right: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .SignupBTn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .semiSignupBtn{
+        height: 1.9rem;
+        width: 5rem;
+        /* background-color: #94a3b8; */
+        /* background-color: #f3f3f3; */
+        /* background-color: #268d61; */
+        background-color: #111727;
+        color: #f3f3f3;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+
+}
