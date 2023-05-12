@@ -15,17 +15,18 @@ const Auth = () => {
     const [name,setName] = useState("");
     const [profileImg,setProfileIMg] = useState("");
     const [password,setPassword] = useState("");
-    console.log("email",email);
-    console.log("Password",password);
+    // console.log("email",email);
+    // console.log("Password",password);
     const [signupToggle,setSignupToggle] = useState(false)
     
-
+    // console.log(import.meta.env.VITE_BASE_URL)
+    
 
     const handleLogin = async () =>{
        
         try {
             let res = await axios.post(
-                "http://localhost:5500/api/login",{email,password}
+                `${import.meta.env.VITE_BASE_URL}/api/login`,{email,password}
               );
               console.log("res",res.data.userdata._id)
               dispatch(loginSuccess(res.data.userdata._id))
@@ -44,7 +45,7 @@ const Auth = () => {
         dispatch(loginStart())
         try {
             let res = await axios.post(
-                "http://localhost:5500/api/signup",{name,email,password,profileIMg:profileImg,isCompany:radioCheck}
+                `${import.meta.env.VITE_BASE_URL}/api/signup`,{name,email,password,profileIMg:profileImg,isCompany:radioCheck}
               );
               console.log("res",res.data.userdata._id)
               dispatch(loginSuccess(res.data.userdata._id))
@@ -62,7 +63,7 @@ const Auth = () => {
     const UploadImages = (file) => {
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("upload_preset", "thebeast07");
+        formData.append("upload_preset", `${import.meta.env.VITE_UPLOAD_PRESET}`);
         axios
           .post(
             "https://api.cloudinary.com/v1_1/himanshuthakur/image/upload",

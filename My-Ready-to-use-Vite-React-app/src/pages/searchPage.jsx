@@ -19,22 +19,22 @@ const SearchPage = () => {
     const jobGetter = async()=>{
         if(title && title.length){
             let res = await axios.get(
-                `http://localhost:5500/api/job/search?title=${title}`
+                `${import.meta.env.VITE_BASE_URL}/api/job/search?title=${title}`
               );
               setAllJobs(res.data)
         }else if(location && location.length){
             let res = await axios.get(
-                `http://localhost:5500/api/job/search?location=${location}`
+                `${import.meta.env.VITE_BASE_URL}/api/job/search?location=${location}`
               );
               setAllJobs(res.data)
         }else if (title && location){
             let res = await axios.get(
-                `http://localhost:5500/api/job/search?title=${title}`
+                `${import.meta.env.VITE_BASE_URL}/api/job/search?title=${title}`
               );
               setAllJobs(res.data)
         }else{
             let res = await axios.get(
-                `http://localhost:5500/api/job`
+                `${import.meta.env.VITE_BASE_URL}/api/job`
               );
               setAllJobs(res.data)
         }

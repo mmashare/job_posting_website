@@ -21,10 +21,10 @@ const Profilepage = () => {
     const [jobPostToogle,setJobPostToggle] = useState(true)
     const [CompanyPostToogle,setCompanyPostToogle] = useState(false)
     const [allJob,setAllJobs] = useState("");
-    console.log("allJob",allJob);
+    // console.log("allJob",allJob);
     const [userData,setUserData] = useState("") 
     // console.log("userData",userData);
-
+    // console.log(import.meta.env.VITE_UPLOAD_PRESET)
     const [jobData,setJobData] = useState({             title:"",
                                                         CompanyName:"",
                                                         simpleDescription:"",
@@ -36,14 +36,14 @@ const Profilepage = () => {
                                                         jobtype:"",
                                                         profilrImg:"",
                                                     });
-    console.log("jobData",jobData)
+    // console.log("jobData",jobData)
 
     const [updateProfile,setUpdateProfile] = useState({newName:"",newEmail:""})
     // console.log("updateProfile",updateProfile)
 
 
     let {id} = useParams();
-    console.log("id",id)
+    // console.log("id",id)
     // console.log("toogleForJobApply",toogleForJobApply)
     // console.log("toogleSavedjob",toogleSavedjob)
     // console.log("toogleFollowCompany",toogleFollowCompany)
@@ -98,7 +98,7 @@ const Profilepage = () => {
         const profileGetter = async ()=>{
             let token =  JSON.parse(sessionStorage?.getItem("token") || "{}");
             let res = await axios.get(
-                `http://localhost:5500/api/user/${id}`,{
+                `${import.meta.env.VITE_BASE_URL}/api/user/${id}`,{
                     headers: {
                         'content-type': 'application/json',
                         'token': `Bearer,${token}`
@@ -115,7 +115,7 @@ const Profilepage = () => {
             let token =  JSON.parse(sessionStorage?.getItem("token") || "{}");
             if(token){
             let res = await axios.put(
-                `http://localhost:5500/api/user/${id && id}`,{name:updateProfile.newName,email:updateProfile.newEmail},{
+                `${import.meta.env.VITE_BASE_URL}/api/user/${id && id}`,{name:updateProfile.newName,email:updateProfile.newEmail},{
                     headers: {
                         'content-type': 'application/json',
                         'token': `Bearer,${token}`
@@ -128,7 +128,7 @@ const Profilepage = () => {
         const UploadImages = (file) => {
             const formData = new FormData();
             formData.append("file", file);
-            formData.append("upload_preset", "thebeast07");
+            formData.append("upload_preset", `${import.meta.env.VITE_UPLOAD_PRESET}`);
             axios
               .post(
                 "https://api.cloudinary.com/v1_1/himanshuthakur/image/upload",
@@ -148,7 +148,7 @@ const Profilepage = () => {
         const CreateJobFunc = async ()=>{
             let token =  JSON.parse(sessionStorage?.getItem("token") || "{}");
             let res = await axios.post(
-                `http://localhost:5500/api/job`,{title:jobData.title,CompanyName:jobData.CompanyName,simpleDescription:jobData.simpleDescription,responsiblities:jobData.responsiblities,jobRequirements:jobData.jobRequirements,experience:jobData.experience,employmentType:jobData.employmentType,jobLocation:jobData.jobLocation,jobtype:jobData.jobtype,CompanyImg:jobData.profilrImg || "",userId:id},{
+                `${import.meta.env.VITE_BASE_URL}/api/job`,{title:jobData.title,CompanyName:jobData.CompanyName,simpleDescription:jobData.simpleDescription,responsiblities:jobData.responsiblities,jobRequirements:jobData.jobRequirements,experience:jobData.experience,employmentType:jobData.employmentType,jobLocation:jobData.jobLocation,jobtype:jobData.jobtype,CompanyImg:jobData.profilrImg || "",userId:id},{
                     headers: {
                         'content-type': 'application/json',
                         'token': `Bearer,${token}`
@@ -160,7 +160,7 @@ const Profilepage = () => {
 
         const JObGetter = async ()=>{
             let res = await axios.get(
-                `http://localhost:5500/api/job/single/${id}`
+                `${import.meta.env.VITE_BASE_URL}/api/job/single/${id}`
             );
             // console.log("allJobs",res.data);
             setAllJobs(res.data);
@@ -175,7 +175,7 @@ const Profilepage = () => {
              }
              if(userId && token){
             let res = await axios.get(
-                `http://localhost:5500/api/job/applyjobs/${userId}`,{
+                `${import.meta.env.VITE_BASE_URL}/api/job/applyjobs/${userId}`,{
                     headers: {
                         'content-type': 'application/json',
                         'token': `Bearer,${token}`
@@ -196,7 +196,7 @@ const Profilepage = () => {
              }
              if(userId && token){
             let res = await axios.get(
-                `http://localhost:5500/api/job/savedjobs/${userId}`,{
+                `${import.meta.env.VITE_BASE_URL}/api/job/savedjobs/${userId}`,{
                     headers: {
                         'content-type': 'application/json',
                         'token': `Bearer,${token}`

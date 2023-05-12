@@ -5,9 +5,9 @@ import { useState } from 'react';
 import {Link} from "react-router-dom"
 const Search = ({title,setTitle,location,setLocation,jobGetter,isDisible,text})=>{
   // const [location,setLocation] = useState("");
-  console.log("location",location)
+  // console.log("location",location)
   // const [title,setTitle] = useState("");
-  console.log("title",title);
+  // console.log("title",title);
 
   
 

@@ -9,18 +9,6 @@ const Main = ({id,jobName,companyName,jobType,experience,employment,location,job
   
   const [myToggle,setMyToggle] = useState(false);
 
-  const JObSavedFunc = async ()=>{
-    let userId =  JSON.parse(sessionStorage?.getItem("userID") || "{}");  
-    if(userId && userId.length < 1){
-      let res = await axios.put(
-        `http://localhost:5500/api/job/${userId}`,{jobId:id},{withCredentials:true}
-      );
-      console.log("savedjob",res)
-      setMyToggle(true)
-      }
-    
-  } 
-
  
   return (
     <div className={styles.container}>
@@ -49,7 +37,7 @@ const Main = ({id,jobName,companyName,jobType,experience,employment,location,job
 
       <div className={styles.smallScreenSaveBTn}>
         {/* it's the save btn that this div have for only mobile responsive, on bigger screeen it is display none */}
-      <BookmarkIcon className={styles.realBtn} onClick={JObSavedFunc}/>
+      <BookmarkIcon className={styles.realBtn}/>
       </div>
 
       </div>

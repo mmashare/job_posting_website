@@ -10,10 +10,10 @@ import moment  from "moment";
 import {Link} from "react-router-dom"
 const MainJobPage = () => {
   const [jobInfo,SetJobInfo] = useState("")
-  console.log("jobInfo",jobInfo)
+  // console.log("jobInfo",jobInfo)
 
   const [userData,setUserData] = useState("")
-  console.log("userData",userData)
+  // console.log("userData",userData)
 
   const [RandomJob,setRandomJob] = useState(""); 
   // console.log("RandomJob",RandomJob)
@@ -25,7 +25,7 @@ const MainJobPage = () => {
 
   const AllRandomJob = async ()=>{
         let res = await axios.get(
-          `http://localhost:5500/api/job`
+          `${import.meta.env.VITE_BASE_URL}/api/job`
       );
       // console.log("allJobs",res.data);
       setRandomJob(res.data);
@@ -34,7 +34,7 @@ const MainJobPage = () => {
 
   const JobGetter = async ()=>{
     let res = await axios.get(
-      `http://localhost:5500/api/job/onlyOne/${id}`
+      `${import.meta.env.VITE_BASE_URL}/api/job/onlyOne/${id}`
   );
   // console.log("allJobs",res.data);
   SetJobInfo(res.data);
@@ -48,7 +48,7 @@ const MainJobPage = () => {
       let token =  JSON.parse(sessionStorage?.getItem("token") || "{}");  
       if(userId){
         let res = await axios.get(
-          `http://localhost:5500/api/user/${userId}`,{
+          `${import.meta.env.VITE_BASE_URL}/api/user/${userId}`,{
             headers: {
                 'content-type': 'application/json',
                 'token': `Bearer,${token}`
@@ -70,7 +70,7 @@ const MainJobPage = () => {
     }
     if(userId){
       let res = await axios.put(
-        `http://localhost:5500/api/job/saved/${userId}`,{jobId:id},{
+        `${import.meta.env.VITE_BASE_URL}/api/job/saved/${userId}`,{jobId:id},{
           headers: {
               'content-type': 'application/json',
               'token': `Bearer,${token}`
@@ -93,7 +93,7 @@ const MainJobPage = () => {
     }
     if(userId){
       let res = await axios.put(
-        `http://localhost:5500/api/job/apply/${userId}`,{jobId:id},{
+        `${import.meta.env.VITE_BASE_URL}/api/job/apply/${userId}`,{jobId:id},{
           headers: {
               'content-type': 'application/json',
               'token': `Bearer,${token}`

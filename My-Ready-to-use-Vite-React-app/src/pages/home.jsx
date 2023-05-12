@@ -46,66 +46,66 @@ const Home = () => {
         if(fulltime === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Jobtype=Full-time"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Jobtype=Full-time`
             );
             setAllJobs(res.data)
           }else if(parttime === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Jobtype=Part-time"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Jobtype=Part-time`
             );
             setAllJobs(res.data)
           }else if(intership === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Jobtype=Internship"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Jobtype=Internship`
             );
             setAllJobs(res.data)
           }else if(remote === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?EmploymentType=Remote"
+              `${import.meta.env.VITE_BASE_URL}/api/job?EmploymentType=Remote`
             );
             setAllJobs(res.data)
           }else if(onsite === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?EmploymentType=onSite"
+              `${import.meta.env.VITE_BASE_URL}/api/job?EmploymentType=onSite`
             );
             setAllJobs(res.data)
           }else if(underOneYear === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Experience=Under 1 Year"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Experience=Under 1 Year`
             );
             setAllJobs(res.data)
           }else if(oneOrTwoYear === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Experience=1-2 Years"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Experience=1-2 Years`
             );
             setAllJobs(res.data)
           }else if(twoToSixYear === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Experience=2-6 Years"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Experience=2-6 Years`
             );
             setAllJobs(res.data)
           }else if(twoToSixYear === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Experience=2-6 Years"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Experience=2-6 Years`
             );
             setAllJobs(res.data)
           }else if(overSixYear === true){
             
             let res = await axios.get(
-              "http://localhost:5500/api/job?Experience=Over 6 Years"
+              `${import.meta.env.VITE_BASE_URL}/api/job?Experience=Over 6 Years`
             );
             setAllJobs(res.data)
           }else{
 
-            let res = await axios.get("http://localhost:5500/api/job");
+            let res = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/job`);
       
             setAllJobs(res.data);
           }
