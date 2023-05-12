@@ -41,8 +41,8 @@ app.use("/api/",userRoutes)
 app.use("/api/",jobRoutes)
 
 
-
-app.listen(5500,()=>{
+let PORT = process.env.PORT || 5500
+app.listen(PORT,()=>{
     Connect();
     console.log("App is Running on 5500 port")
    
