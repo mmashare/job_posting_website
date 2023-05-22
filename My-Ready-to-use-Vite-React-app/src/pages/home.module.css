@@ -50,7 +50,7 @@
         height: 3rem;
         width: 100%;
         /* background-color: rgb(247, 141, 11); */
-        background-color: #e8eaee;
+        /* background-color: #e8eaee; */
         background-color: #f3f3f3;
         margin: 0px;
         padding: 0rem;
@@ -118,7 +118,10 @@
         margin: 0rem;
         padding: 0rem;
     }
-
+    .searchBTn{
+      display: none;
+       
+    }
     .JobContainer{
         height: 21rem;
         width: 100%;
