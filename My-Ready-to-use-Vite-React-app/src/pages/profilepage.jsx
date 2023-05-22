@@ -315,7 +315,7 @@ const Profilepage = () => {
            {editBtnToggle?<div className={styles.EditProfileDataSection} >
             <div className={styles.FirstEditContainer}>
             <p className={styles.deatils}>Details</p>
-            <button onClick={()=>{setEditBtnToggle(false)}} className={styles.closeDivBtn} style={{backgroundColor:"#f3f3f3"}}>X</button>
+            <button onClick={()=>{setEditBtnToggle(false)}} className={styles.closeDivBtn} style={{backgroundColor:"#f3f3f3",color:"#0c0c0c"}}>X</button>
             </div>
             
             <div className={styles.UpdateDeatilsContainer}>

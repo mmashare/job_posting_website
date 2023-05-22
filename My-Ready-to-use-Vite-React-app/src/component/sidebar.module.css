@@ -50,7 +50,7 @@
         box-sizing: border-box;
         background-color: #f3f3f3;
         padding-top: 1rem;
-     
+        cursor: pointer;
 
     }
 
@@ -494,7 +494,7 @@
         background-color: #f3f3f3;
         padding-top: 1rem;
         padding-left: 15px;   
-
+        cursor: pointer;
     }
 
     .ToggleBtncontainer{
@@ -936,7 +936,7 @@
         background-color: #ffffff;
         padding-top: 1rem;
         padding-left: 15px;
-
+        cursor: pointer;
     }
 
     .ToggleBtncontainer{
@@ -1328,7 +1328,7 @@
         background-color: #ffffff;
         padding-top: 1rem;
         padding-left: 20px;
-        
+        cursor: pointer;
 
     }
 
