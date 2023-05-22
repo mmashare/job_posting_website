@@ -570,7 +570,7 @@
         display: flex;
         align-items: center;
         margin-left: 10px;
-    
+        margin-top: 12px
     }
     
     .verifiedIcon{
@@ -1048,7 +1048,7 @@
         display: flex;
         align-items: center;
         margin-left: 10px;
-    
+        margin-top: 12px
     }
     
     .verifiedIcon{
@@ -1527,7 +1527,8 @@
         display: flex;
         align-items: center;
         margin-left: 10px;
-        margin-top: 15px
+        margin-top: 15px;
+        margin-top: 12px
     }
     
     .verifiedIcon{

@@ -23,6 +23,7 @@
         flex-direction: row;
         justify-content: space-between;
         overflow-x:hidden;
+        overflow-y:hidden;
         box-sizing: border-box;
     }
     .LogoContainer{
@@ -250,6 +251,7 @@
         flex-direction: row;
         justify-content: space-between;
         overflow-x:hidden;
+        overflow-y:hidden;
         box-sizing: border-box;
     }
     .LogoContainer{
@@ -369,7 +371,7 @@
 
     .BtnContainer{
         height: 2.1rem;
-        width: 15rem;
+        width: 11rem;
         /* background-color: #7cec12; */
         /* background-color: #f3f3f3; */
         display: flex;
@@ -378,7 +380,7 @@
         justify-content: center;
         margin-top:auto;
         margin-bottom: auto;
-        margin-right: 5%;
+        margin-right: 15px;
         /* margin-left: 1%; */
         border-radius: 3px;
         /* border: none;
@@ -462,7 +464,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 10px;
+        margin-right: 5px;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: auto;
@@ -488,6 +490,7 @@
         flex-direction: row;
         justify-content: space-between;
         overflow-x:hidden;
+        overflow-y:hidden;
         box-sizing: border-box;
     }
     .LogoContainer{
@@ -606,7 +609,7 @@
 
     .BtnContainer{
         height: 2.1rem;
-        width: 15rem;
+        width: 11rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
         display: flex;
@@ -615,7 +618,7 @@
         justify-content: center;
         margin-top:auto;
         margin-bottom: auto;
-        margin-right: 5%;
+        margin-right: 15px;
         /* margin-left: 1%; */
         /* border-radius: 3px; */
         /* border: 1px #111727 solid; */
@@ -697,7 +700,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 10px;
+        margin-right: 5px;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: auto;
@@ -723,6 +726,7 @@
         flex-direction: row;
         /* justify-content: space-around; */
         overflow-x:hidden;
+        overflow-y:hidden;
         box-sizing: border-box;
     }
     .LogoContainer{
@@ -841,7 +845,7 @@
 
     .BtnContainer{
         height: 2.1rem;
-        width: 15rem;
+        width: 11rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
         display: flex;
@@ -850,7 +854,7 @@
         justify-content: center;
         margin-top:auto;
         margin-bottom: auto;
-        margin-right: 5%;
+        margin-right: 15px;
         /* margin-left: 1%; */
         /* border-radius: 3px; */
         /* border: 1px #111727 solid; */
@@ -933,7 +937,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 10px;
+        margin-right: 5px;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: auto;

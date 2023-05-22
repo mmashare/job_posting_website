@@ -36,8 +36,8 @@ const Navbar = () => {
   
   return (
     <main className={styles.container}>
-      <figure className={styles.LogoContainer}>
-      <Link to="/"><img src={Logo} alt={""} className={styles.Logoo}/></Link>
+      <figure className={styles.LogoContainer} style={{marginTop:"auto",marginBottom:"auto"}}>
+      <Link to="/" style={{marginTop:"auto",marginBottom:"auto"}}><img src={Logo} alt={""} className={styles.Logoo}/></Link>
       </figure>
       <div  className={styles.searchBtnContainer}>
           <MagnifyingGlassIcon className={styles.searchBTn} onClick={()=>{navigate('/search')}}/>

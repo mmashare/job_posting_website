@@ -315,12 +315,12 @@ const Profilepage = () => {
            {editBtnToggle?<div className={styles.EditProfileDataSection} >
             <div className={styles.FirstEditContainer}>
             <p className={styles.deatils}>Details</p>
-            <button onClick={()=>{setEditBtnToggle(false)}} className={styles.closeDivBtn} style={{backgroundColor:"#f3f3f3",color:"#0c0c0c"}}>X</button>
+            <button onClick={()=>{setEditBtnToggle(false)}} className={styles.closeDivBtn} style={{backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"none"}}>X</button>
             </div>
             
             <div className={styles.UpdateDeatilsContainer}>
-                <input className={styles.UpdateDeatilsNameInput} placeholder="*New Name" style={{outline:"none"}} value={updateProfile.newName} onChange={(e)=>{setUpdateProfile({...updateProfile,newName:e.target.value})}}/>
-                <input className={styles.UpdateDeatilsEmailInput} placeholder="*New Email" style={{outline:"none"}} value={updateProfile.newEmail} onChange={(e)=>{setUpdateProfile({...updateProfile,newEmail:e.target.value})}}/>
+                <input className={styles.UpdateDeatilsNameInput} placeholder="*New Name" style={{outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={updateProfile.newName} onChange={(e)=>{setUpdateProfile({...updateProfile,newName:e.target.value})}}/>
+                <input className={styles.UpdateDeatilsEmailInput} placeholder="*New Email" style={{outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={updateProfile.newEmail} onChange={(e)=>{setUpdateProfile({...updateProfile,newEmail:e.target.value})}}/>
                 <button className={styles.UpdateDeatilsBtn} style={{outline:"none"}} onClick={UpdateProfileFunc}>Update</button>
             </div>
 
@@ -331,7 +331,7 @@ const Profilepage = () => {
             
             <div className={styles.FirstEditContainer}>
             <p className={styles.deatils}>Create Job</p>
-            <button onClick={()=>{setToggleJobCreate(false)}} className={styles.closeDivBtn} style={{backgroundColor:"#f3f3f3"}}>X</button>
+            <button onClick={()=>{setToggleJobCreate(false)}} className={styles.closeDivBtn} style={{backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"none"}}>X</button>
             </div>
 
             <div className={styles.jobOrCompanySelectContainer}>
@@ -340,12 +340,12 @@ const Profilepage = () => {
             </div>
 
             <section className={styles.UpdateDeatilsContainer} style={{height:"29rem"}}>
-            <input className={styles.UpdateDeatilsNameInput} placeholder="Company Name" style={{outline:"none",height:"2rem"}} value={jobData.CompanyName} onChange={(e)=>{setJobData({...jobData,CompanyName:e.target.value})}}/>
-                <input className={styles.UpdateDeatilsNameInput} placeholder="Job Title" style={{outline:"none",height:"2rem"}} value={jobData.title} onChange={(e)=>{setJobData({...jobData,title:e.target.value})}}/>
-                <textarea className={styles.UpdateDeatilsEmailInput} placeholder="Description" style={{outline:"none",height:"4rem",resize: "none"}} value={jobData.simpleDescription} onChange={(e)=>{setJobData({...jobData,simpleDescription:e.target.value})}}/>
-                <textarea className={styles.UpdateDeatilsNameInput} placeholder="Responsibilities" style={{outline:"none",height:"4rem",resize: "none"}} value={jobData.responsiblities} onChange={(e)=>{setJobData({...jobData,responsiblities:e.target.value})}}/>
-                <input className={styles.UpdateDeatilsEmailInput} placeholder="Job Location" style={{outline:"none"}} value={jobData.jobLocation} onChange={(e)=>{setJobData({...jobData,jobLocation:e.target.value})}}/>
-                <input className={styles.UpdateDeatilsEmailInput} placeholder="Job Requirements" style={{outline:"none",marginTop:"2px"}} value={jobData.jobRequirements} onChange={(e)=>{setJobData({...jobData,jobRequirements:e.target.value})}}/>
+            <input className={styles.UpdateDeatilsNameInput} placeholder="Company Name" style={{outline:"none",height:"2rem",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={jobData.CompanyName} onChange={(e)=>{setJobData({...jobData,CompanyName:e.target.value})}}/>
+                <input className={styles.UpdateDeatilsNameInput} placeholder="Job Title" style={{outline:"none",height:"2rem",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={jobData.title} onChange={(e)=>{setJobData({...jobData,title:e.target.value})}}/>
+                <textarea className={styles.UpdateDeatilsEmailInput} placeholder="Description" style={{outline:"none",height:"4rem",resize: "none",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={jobData.simpleDescription} onChange={(e)=>{setJobData({...jobData,simpleDescription:e.target.value})}}/>
+                <textarea className={styles.UpdateDeatilsNameInput} placeholder="Responsibilities" style={{outline:"none",height:"4rem",resize: "none",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={jobData.responsiblities} onChange={(e)=>{setJobData({...jobData,responsiblities:e.target.value})}}/>
+                <input className={styles.UpdateDeatilsEmailInput} placeholder="Job Location" style={{outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={jobData.jobLocation} onChange={(e)=>{setJobData({...jobData,jobLocation:e.target.value})}}/>
+                <input className={styles.UpdateDeatilsEmailInput} placeholder="Job Requirements" style={{outline:"none",marginTop:"2px",backgroundColor:"#f3f3f3",color:"#0c0c0c",border:"1px solid #0c0c0c"}} value={jobData.jobRequirements} onChange={(e)=>{setJobData({...jobData,jobRequirements:e.target.value})}}/>
                 <div className={styles.inputContainer2} style={{width:"15rem",marginLeft:"auto",marginRight:"auto"}}>
                         <p className={styles.profileImg} style={{marginLeft:"10px"}}>Company Logo</p>
                         <input placeholder='gg' className={styles.inputwrapper2} type="file" style={{marginLeft:"10px"}} onChange={(e) => UploadImages(e.target.files[0])}/>
