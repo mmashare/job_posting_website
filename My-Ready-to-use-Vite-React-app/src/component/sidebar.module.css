@@ -50,7 +50,7 @@
         box-sizing: border-box;
         background-color: #f3f3f3;
         padding-top: 1rem;
-        
+     
 
     }
 
@@ -60,11 +60,11 @@
         background-color: none;
         display: flex;
         flex-direction: row;
-        border-radius: 8px;
-        border: 0.3px #bac0bd solid;
+        border-radius: 3px;
+        /* border: 0.3px #bac0bd solid; */
         margin-left: 5px;
         /* margin-right: auto; */
-        
+        background-color: #000;
         /* margin-top: 2rem;
         margin-bottom: auto; */
         
@@ -85,6 +85,7 @@
         justify-content: center;
         font-family: Ariel-Medium;
         font-weight: 600;
+        color: #ffffff;
     }
 
     .FilterIcon{
@@ -93,12 +94,13 @@
         background-color: none;
         margin-top: auto;
         margin-bottom: auto;
+        color: #ffffff;
     }
 
     .Filtercontainer{
         height: 53rem;
         width: 100%;
-        background-color: #f3f3f3;
+        background-color: #fafafa;
         position: relative;
     }
 
@@ -114,12 +116,13 @@
         /* background-color: rgb(139, 160, 118); */
         display: flex;
         align-items: center;
+        margin-top: 10px;
     }
 
     .firstHeading{
         height: 1.5rem;
         width: 5rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -127,6 +130,8 @@
         margin-left: 5px;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .FirstOptionSection{
@@ -140,7 +145,7 @@
     .FirstSectionFirstOptionContainer{
         height: 2.5rem;
         width: 100%;
-        /* background-color: rgb(226, 255, 59); */
+        /* background-color: #91e706; */
         display: flex;
         flex-direction: row;
     }
@@ -148,9 +153,14 @@
     .inputOfFirstSectionFirstOptionContainer{
         height: 1rem;
         width: 1rem;
-        /* background-color: rgb(92, 112, 71); */
+        /* width: 35px;
+        height: 20px; */
+        /* background-color: #f3f3f3; */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
+        /* border: 1px solid #0c0c0c; */
+        
     }
 
     .FirstSectionFirstOption{
@@ -158,10 +168,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
 
@@ -179,6 +190,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionSecOption{
@@ -186,10 +198,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
 
@@ -207,6 +220,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionThirdOption{
@@ -214,11 +228,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
-
+        margin-left: 5px;
     }
 
     .SecSectionWrapper{
@@ -238,7 +252,7 @@
     .SecHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -270,6 +284,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .SecSectionFirstOption{
@@ -277,10 +292,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .SecSectionsecOptionContainer{
@@ -297,17 +313,18 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
-        
+        margin-left: 5px;
     }
     .SecSectionsecOption{
         height: 1.4rem;
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .ThirdSectionWrapper{
@@ -327,7 +344,7 @@
     .thirdHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -359,16 +376,18 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
     .thirdSectionFirstOption{
         height: 1.4rem;
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .thirdSectionsecOptionContainer{
@@ -385,6 +404,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .thirdSectionsecOption{
@@ -392,10 +412,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .thirdSectionthirdOptionContainer{
@@ -412,6 +433,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .thirdSectionthirdOption{
@@ -419,10 +441,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .thirdSectionfourthOptionContainer{
@@ -439,7 +462,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
-        
+        margin-left: 5px;
     }
     
 
@@ -448,10 +471,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .Filtercontainer1{
@@ -476,11 +500,11 @@
     .ToggleBtncontainer{
         height: 2rem;
         width: 5rem;
-        /* background-color: #f9f9f9; */
+        background-color: #000;
         display: flex;
         flex-direction: row;
-        border-radius: 8px;
-        border: 0.3px #bac0bd solid;
+        border-radius: 3px;
+        /* border: 0.3px #bac0bd solid; */
         margin-left: 10px;
         /* margin-right: auto; */
         align-items: center;
@@ -492,7 +516,7 @@
     .ToggleBtn{
         height: 2rem;
         width: 3.5rem;
-        /* background-color: none; */
+        color: #ffffff;
         /* background-color:blue; */
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -511,13 +535,18 @@
         background-color: none;
         margin-top: auto;
         margin-bottom: auto;
+        color: #ffffff;
     }
 
     .Filtercontainer{
-        height: 53rem;
+        /* height: 53rem; */
+        height: 32rem;
         width: 100%;
         background-color: #f3f3f3;
+        border: 0.6px solid #666;
         position: relative;
+        margin-top: 5px;
+        border-radius: 3px;
     }
 
     .FirstSectionWrapper{
@@ -537,14 +566,17 @@
     .firstHeading{
         height: 1.5rem;
         width: 5rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
         /* background-color: rgb(36, 54, 16); */
-        margin-left: 5px;
+        margin-left: 10px;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: auto;
+
     }
 
     .FirstOptionSection{
@@ -569,6 +601,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
 
     .FirstSectionFirstOption{
@@ -576,10 +609,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
 
@@ -597,6 +631,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
 
     .FirstSectionSecOption{
@@ -604,10 +639,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
 
@@ -625,6 +661,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
 
     .FirstSectionThirdOption{
@@ -632,10 +669,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .SecSectionWrapper{
@@ -655,14 +693,15 @@
     .SecHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
         /* background-color: rgb(36, 54, 16); */
-        margin-left: 5px;
+        margin-left: 10px;
         font-family: Ariel-Medium;
         font-weight: 600;
+
     }
 
     .SecOptionSection{
@@ -687,6 +726,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
 
     .SecSectionFirstOption{
@@ -694,10 +734,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .SecSectionsecOptionContainer{
@@ -714,6 +755,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
         
     }
     .SecSectionsecOption{
@@ -721,10 +763,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .ThirdSectionWrapper{
@@ -744,12 +787,12 @@
     .thirdHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
         /* background-color: rgb(36, 54, 16); */
-        margin-left: 5px;
+        margin-left: 10px;
         font-family: Ariel-Medium;
         font-weight: 600;
     }
@@ -776,16 +819,18 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
     .thirdSectionFirstOption{
         height: 1.4rem;
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .thirdSectionsecOptionContainer{
@@ -802,6 +847,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
 
     .thirdSectionsecOption{
@@ -809,10 +855,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .thirdSectionthirdOptionContainer{
@@ -829,6 +876,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 10px;
     }
 
     .thirdSectionthirdOption{
@@ -836,10 +884,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
 
     .thirdSectionfourthOptionContainer{
@@ -856,7 +905,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
-        
+        margin-left: 10px;
     }
     
 
@@ -865,10 +914,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 5px;
     }
     .Filtercontainer1{
         display: none;
@@ -917,7 +967,7 @@
     .firstHeading{
         height: 1.5rem;
         width: 5rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -949,6 +999,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionFirstOption{
@@ -956,10 +1007,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
 
@@ -977,6 +1029,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionSecOption{
@@ -984,10 +1037,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 10px;
     }
 
 
@@ -1005,6 +1059,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionThirdOption{
@@ -1012,11 +1067,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
-
+        margin-left: 8px;
     }
 
     .SecSectionWrapper{
@@ -1036,7 +1091,7 @@
     .SecHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -1068,6 +1123,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .SecSectionFirstOption{
@@ -1075,10 +1131,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .SecSectionsecOptionContainer{
@@ -1095,17 +1152,18 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
-        
+        margin-left: 5px;
     }
     .SecSectionsecOption{
         height: 1.4rem;
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .ThirdSectionWrapper{
@@ -1125,7 +1183,7 @@
     .thirdHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
@@ -1157,16 +1215,18 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
     .thirdSectionFirstOption{
         height: 1.4rem;
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .thirdSectionsecOptionContainer{
@@ -1183,6 +1243,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .thirdSectionsecOption{
@@ -1190,10 +1251,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .thirdSectionthirdOptionContainer{
@@ -1210,6 +1272,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .thirdSectionthirdOption{
@@ -1217,10 +1280,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .thirdSectionfourthOptionContainer{
@@ -1237,7 +1301,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
-        
+        margin-left: 5px;
     }
     
 
@@ -1246,10 +1310,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 }
 
@@ -1295,12 +1360,10 @@
     .firstHeading{
         height: 1.5rem;
         width: 5rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
-        color: #0c0c0c;
-        /* background-color: rgb(36, 54, 16); */
         margin-left: 5px;
         font-family: Ariel-Medium;
         font-weight: 600;
@@ -1309,9 +1372,9 @@
     .FirstOptionSection{
         height: 8rem;
         width: 100%;
-        /* background-color: rgb(156, 182, 12); */
         display: flex;
         flex-direction: column;
+        
     }
 
     .FirstSectionFirstOptionContainer{
@@ -1328,6 +1391,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionFirstOption{
@@ -1335,10 +1399,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
 
@@ -1356,6 +1421,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionSecOption{
@@ -1363,10 +1429,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
 
@@ -1384,6 +1451,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .FirstSectionThirdOption{
@@ -1391,11 +1459,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
-
+        margin-left: 8px;
     }
 
     .SecSectionWrapper{
@@ -1415,11 +1483,10 @@
     .SecHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
-        color: #0c0c0c;
         /* background-color: rgb(36, 54, 16); */
         margin-left: 5px;
         font-family: Ariel-Medium;
@@ -1448,6 +1515,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .SecSectionFirstOption{
@@ -1455,10 +1523,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .SecSectionsecOptionContainer{
@@ -1475,6 +1544,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
         
     }
     .SecSectionsecOption{
@@ -1482,10 +1552,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .ThirdSectionWrapper{
@@ -1505,11 +1576,10 @@
     .thirdHeading{
         height: 1.5rem;
         width: 6rem;
-        color: #f9f9f9;
+        color: #666;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1rem;
-        color: #0c0c0c;
         /* background-color: rgb(36, 54, 16); */
         margin-left: 5px;
         font-family: Ariel-Medium;
@@ -1538,16 +1608,18 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
     .thirdSectionFirstOption{
         height: 1.4rem;
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .thirdSectionsecOptionContainer{
@@ -1564,6 +1636,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .thirdSectionsecOption{
@@ -1571,10 +1644,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .thirdSectionthirdOptionContainer{
@@ -1591,6 +1665,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 5px;
     }
 
     .thirdSectionthirdOption{
@@ -1598,10 +1673,11 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 
     .thirdSectionfourthOptionContainer{
@@ -1618,7 +1694,7 @@
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
         margin-bottom: auto;
-        
+        margin-left: 5px;
     }
     
 
@@ -1627,9 +1703,10 @@
         width: 6rem;
         /* background-color: rgb(92, 112, 71); */
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 6px;
         font-size: 1rem;
         font-family: Ariel-Medium;
         font-weight: 600;
+        margin-left: 8px;
     }
 }

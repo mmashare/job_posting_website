@@ -43,9 +43,9 @@ const SearchPage = () => {
       
 
   return (
-    <div className={styles.Container}>
-        <div className={styles.NavContainer}><Navbar /></div>
-        <div className={styles.searchComponentContainer}>
+    <main className={styles.Container}>
+        <nav className={styles.NavContainer}><Navbar /></nav>
+        <aside className={styles.searchComponentContainer}>
             <Search 
             title={title}
             setTitle={setTitle}
@@ -53,10 +53,10 @@ const SearchPage = () => {
             setLocation={setLocation}
             jobGetter={jobGetter}
             />
-            </div>
-        <div className={styles.jobsContainer}>
+            </aside>
+        <section className={styles.jobsContainer}>
             {allJobs && allJobs.map((h,i)=>{
-                        return (<div key={i} style={{backgroundColor:"#ffffff"}}>
+                        return (<figure key={i} style={{backgroundColor:"#ffffff"}}>
                             <Link to={`/job/${h._id}`}>
                                 <Main
                                 jobName={h.title}
@@ -69,10 +69,10 @@ const SearchPage = () => {
                                 companyIMg={h.CompanyImg}
                                 />
                                 </Link>
-                        </div>)
+                        </figure>)
                             })}
-        </div>
-    </div>
+        </section>
+    </main>
   )
 }
 

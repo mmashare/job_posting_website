@@ -7,13 +7,15 @@ import styles from "./home.module.css"
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 import {useSelector} from "react-redux"
+import {useNavigate} from "react-router-dom"
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 const Home = () => {
     
     const [allJobs,setAllJobs] = useState();
     // console.log(allJobs)
     const [title,setTitle] = useState();
     const [location,setLocation] = useState();
-
+    const navigate = useNavigate()
      const {
         fulltime,
         parttime,
@@ -120,23 +122,24 @@ const Home = () => {
     
     },[fulltime,parttime,intership,remote,onsite,underOneYear,oneOrTwoYear,twoToSixYear,overSixYear])
   return (
-    <div className={styles.container}>
-        <div className={styles.NavbarContainer}>
+    <main className={styles.container}>
+        <nav className={styles.NavbarContainer}>
             <Navbar/>
-        </div>
-        <div className={styles.SearchContainer}>
+        </nav>
+        {/* <div className={styles.SearchContainer}>
             <Search
             isDisible={true}
             text={true}
             />
-        </div>
-        <div className={styles.MainContainer}>
-            <div className={styles.SidebarContainer}>
+        </div> */}
+        <section className={styles.MainContainer}>
+            <aside className={styles.SidebarContainer}>
                 <Sidebar/>
-            </div>
+                <MagnifyingGlassIcon className={styles.searchBTn} onClick={()=>{navigate('/search')}}/>
+            </aside>
             <div className={styles.JobContainer}>
                 {allJobs && allJobs.map((h,i)=>{
-                    return (<div key={i} style={{backgroundColor:"#ffffff"}}>
+                    return (<article key={i} style={{backgroundColor:"#ffffff"}}>
                       <Link to={`/job/${h._id}`}>
                         <Main
                         id={h._id}
@@ -150,13 +153,13 @@ const Home = () => {
                         companyIMg={h.CompanyImg}
                         />
                         </Link>
-                    </div>)
+                    </article>)
                 })}
                 
             
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
   )
 }
 

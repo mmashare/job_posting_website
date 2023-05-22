@@ -13,6 +13,8 @@ import {FullTime,
   TwoToSixYear,
   OverSixYear} from '../redux/filterValue.js'
 import {useDispatch} from "react-redux"
+import Form from 'react-bootstrap/Form';
+
 const Sidebar = () => {
   const [toggle,setToggle] = useState(false);
   const dispatch = useDispatch()
@@ -154,11 +156,11 @@ const Sidebar = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
 
-      <div className={styles.ToggleBtncontainer}>
+      <div className={styles.ToggleBtncontainer} onClick={()=>{setToggle(!toggle)}}>
         <MixerHorizontalIcon className={styles.FilterIcon}/>
-        <p onClick={()=>{setToggle(!toggle)}} className={styles.ToggleBtn}>Filter</p>
+        <p className={styles.ToggleBtn}>Filter</p>
         </div>
 
       {toggle?(
@@ -173,9 +175,9 @@ const Sidebar = () => {
 
 
           <div className={styles.FirstOptionSection}>
-            <div className={styles.FirstSectionFirstOptionContainer}>
+            <section className={styles.FirstSectionFirstOptionContainer}>
 
-              <input 
+              {/* <input 
               placeholder='gg' 
               className={styles.inputOfFirstSectionFirstOptionContainer} 
               type="checkbox"
@@ -183,34 +185,45 @@ const Sidebar = () => {
               value={fulltime}
               onChange={handleValue}
               checked={fulltime?"checked":""}
-              />
+              /> */}
 
-              <p className={styles.FirstSectionFirstOption}>Full-Time</p>
-              </div>
-            <div className={styles.FirstSectionSecOptionContainer}>
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfFirstSectionSecOption} 
-            type="checkbox"
-            name="parttime"
-            value={parttime}
-            onChange={handleValue}
-            checked={parttime?"checked":""}
-            />
-              <p className={styles.FirstSectionSecOption}>Part-Time</p>
-              </div>
-            <div className={styles.FirstSectionThirdOptionContainer}>
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfFirstSectionThirdOption} 
-            type="checkbox"
-            name="intership"
-            value={intership}
-            onChange={handleValue}
-            checked={intership?"checked":""}
-            />
-              <p className={styles.FirstSectionThirdOption}>Intership</p>
-              </div>
+                <Form.Check 
+                  placeholder='gg' 
+                  className={styles.inputOfFirstSectionFirstOptionContainer} 
+                  type="checkbox"
+                  name="fulltime"
+                  value={fulltime}
+                  onChange={handleValue}
+                  checked={fulltime?"checked":""}
+                />
+
+
+                <p className={styles.FirstSectionFirstOption}>Full-Time</p>
+              </section>
+            <section className={styles.FirstSectionSecOptionContainer}>
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfFirstSectionSecOption} 
+              type="checkbox"
+              name="parttime"
+              value={parttime}
+              onChange={handleValue}
+              checked={parttime?"checked":""}
+              />
+                <p className={styles.FirstSectionSecOption}>Part-Time</p>
+              </section>
+            <section className={styles.FirstSectionThirdOptionContainer}>
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfFirstSectionThirdOption} 
+              type="checkbox"
+              name="intership"
+              value={intership}
+              onChange={handleValue}
+              checked={intership?"checked":""}
+              />
+                <p className={styles.FirstSectionThirdOption}>Intership</p>
+              </section>
           </div>
 
         </div>
@@ -224,35 +237,35 @@ const Sidebar = () => {
 
           <div className={styles.SecOptionSection}>
 
-            <div className={styles.SecSectionFirstOptionContainer}>
+            <section className={styles.SecSectionFirstOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfSecSectionFirstOption} 
-            type="checkbox"
-            name="remote"
-            value={remote}
-            onChange={handleValue}
-            checked={remote?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfSecSectionFirstOption} 
+              type="checkbox"
+              name="remote"
+              value={remote}
+              onChange={handleValue}
+              checked={remote?"checked":""}
+              />
 
-              <p className={styles.SecSectionFirstOption}>Remote</p>
-              </div>
+                <p className={styles.SecSectionFirstOption}>Remote</p>
+              </section>
 
-            <div className={styles.SecSectionsecOptionContainer}>
+            <section className={styles.SecSectionsecOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfSecSectionsecOption} 
-            type="checkbox"
-            name="onsite"
-            value={onsite}
-            onChange={handleValue}
-            checked={onsite?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfSecSectionsecOption} 
+              type="checkbox"
+              name="onsite"
+              value={onsite}
+              onChange={handleValue}
+              checked={onsite?"checked":""}
+              />
 
-              <p className={styles.SecSectionsecOption}>On-site</p>
-              </div>
+                <p className={styles.SecSectionsecOption}>On-site</p>
+              </section>
               
           </div>
 
@@ -266,65 +279,65 @@ const Sidebar = () => {
 
           <div className={styles.ThirdOptionSection}>
 
-            <div className={styles.thirdSectionFirstOptionContainer}>
+            <section className={styles.thirdSectionFirstOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionFirstOption} 
-            type="checkbox"
-            name="underOneYear"
-            value={underOneYear}
-            onChange={handleValue}
-            checked={underOneYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionFirstOption} 
+              type="checkbox"
+              name="underOneYear"
+              value={underOneYear}
+              onChange={handleValue}
+              checked={underOneYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionFirstOption}>Under 1 Year</p>
-              </div>
+                <p className={styles.thirdSectionFirstOption}>Under 1 Year</p>
+              </section>
 
-            <div className={styles.thirdSectionsecOptionContainer}>
+            <section className={styles.thirdSectionsecOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionsecOption} 
-            type="checkbox"
-            name="oneOrTwoYear"
-            value={oneOrTwoYear}
-            onChange={handleValue}
-            checked={oneOrTwoYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionsecOption} 
+              type="checkbox"
+              name="oneOrTwoYear"
+              value={oneOrTwoYear}
+              onChange={handleValue}
+              checked={oneOrTwoYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionsecOption}>1 - 2 Years</p>
-              </div>
+                <p className={styles.thirdSectionsecOption}>1 - 2 Years</p>
+              </section>
 
-            <div className={styles.thirdSectionthirdOptionContainer}>
+            <section className={styles.thirdSectionthirdOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionthirdOption} 
-            type="checkbox"
-            name="twoToSixYear"
-            value={twoToSixYear}
-            onChange={handleValue}
-            checked={twoToSixYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionthirdOption} 
+              type="checkbox"
+              name="twoToSixYear"
+              value={twoToSixYear}
+              onChange={handleValue}
+              checked={twoToSixYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionthirdOption}>2 - 6 Years</p>
-              </div>
+                <p className={styles.thirdSectionthirdOption}>2 - 6 Years</p>
+              </section>
 
-            <div className={styles.thirdSectionfourthOptionContainer}>
+            <section className={styles.thirdSectionfourthOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionfourthOption} 
-            type="checkbox"
-            name="overSixYear"
-            value={overSixYear}
-            onChange={handleValue}
-            checked={overSixYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionfourthOption} 
+              type="checkbox"
+              name="overSixYear"
+              value={overSixYear}
+              onChange={handleValue}
+              checked={overSixYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionfourthOption}>Over 6 Years</p>
-              </div>
+                <p className={styles.thirdSectionfourthOption}>Over 6 Years</p>
+              </section>
 
           </div>
 
@@ -349,48 +362,48 @@ const Sidebar = () => {
 
 
           <div className={styles.FirstOptionSection}>
-            <div className={styles.FirstSectionFirstOptionContainer}>
+            <section className={styles.FirstSectionFirstOptionContainer}>
 
-              <input 
+              <Form.Check 
+                placeholder='gg' 
+                className={styles.inputOfFirstSectionFirstOptionContainer} 
+                type="checkbox"
+                name="fulltime"
+                value={fulltime}
+                onChange={handleValue}
+                checked={fulltime?"checked":""}
+                />
+
+                <p className={styles.FirstSectionFirstOption}>Full-Time</p>
+              </section>
+            <section className={styles.FirstSectionSecOptionContainer}>
+
+              <Form.Check 
               placeholder='gg' 
-              className={styles.inputOfFirstSectionFirstOptionContainer} 
+              className={styles.inputOfFirstSectionSecOption} 
               type="checkbox"
-              name="fulltime"
-              value={fulltime}
+              name="parttime"
+              value={parttime}
               onChange={handleValue}
-              checked={fulltime?"checked":""}
+              checked={parttime?"checked":""}
               />
 
-              <p className={styles.FirstSectionFirstOption}>Full-Time</p>
-              </div>
-            <div className={styles.FirstSectionSecOptionContainer}>
+                <p className={styles.FirstSectionSecOption}>Part-Time</p>
+              </section>
+            <section className={styles.FirstSectionThirdOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfFirstSectionSecOption} 
-            type="checkbox"
-            name="parttime"
-            value={parttime}
-            onChange={handleValue}
-            checked={parttime?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfFirstSectionThirdOption} 
+              type="checkbox"
+              name="intership"
+              value={intership}
+              onChange={handleValue}
+              checked={intership?"checked":""}
+              />
 
-              <p className={styles.FirstSectionSecOption}>Part-Time</p>
-              </div>
-            <div className={styles.FirstSectionThirdOptionContainer}>
-
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfFirstSectionThirdOption} 
-            type="checkbox"
-            name="intership"
-            value={intership}
-            onChange={handleValue}
-            checked={intership?"checked":""}
-            />
-
-              <p className={styles.FirstSectionThirdOption}>Intership</p>
-              </div>
+                <p className={styles.FirstSectionThirdOption}>Intership</p>
+              </section>
           </div>
 
         </div>
@@ -404,33 +417,33 @@ const Sidebar = () => {
 
           <div className={styles.SecOptionSection}>
 
-            <div className={styles.SecSectionFirstOptionContainer}>
+            <section className={styles.SecSectionFirstOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfSecSectionFirstOption} 
-            type="checkbox"
-            name="remote"
-            value={remote}
-            onChange={handleValue}
-            checked={remote?"checked":""}
-            />
+              <Form.Check 
+              placeholder='gg' 
+              className={styles.inputOfSecSectionFirstOption} 
+              type="checkbox"
+              name="remote"
+              value={remote}
+              onChange={handleValue}
+              checked={remote?"checked":""}
+              />
 
-              <p className={styles.SecSectionFirstOption}>Remote</p>
-              </div>
+                <p className={styles.SecSectionFirstOption}>Remote</p>
+              </section>
 
-            <div className={styles.SecSectionsecOptionContainer}>
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfSecSectionsecOption} 
-            type="checkbox"
-            name="onsite"
-            value={onsite}
-            onChange={handleValue}
-            checked={onsite?"checked":""}
-            />
-              <p className={styles.SecSectionsecOption}>On-site</p>
-              </div>
+            <section className={styles.SecSectionsecOptionContainer}>
+              <Form.Check 
+              placeholder='gg' 
+              className={styles.inputOfSecSectionsecOption} 
+              type="checkbox"
+              name="onsite"
+              value={onsite}
+              onChange={handleValue}
+              checked={onsite?"checked":""}
+              />
+                <p className={styles.SecSectionsecOption}>On-site</p>
+              </section>
               
           </div>
 
@@ -444,54 +457,54 @@ const Sidebar = () => {
 
           <div className={styles.ThirdOptionSection}>
 
-            <div className={styles.thirdSectionFirstOptionContainer}>
+            <section className={styles.thirdSectionFirstOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionFirstOption} 
-            type="checkbox"
-            name="underOneYear"
-            value={underOneYear}
-            onChange={handleValue}
-            checked={underOneYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionFirstOption} 
+              type="checkbox"
+              name="underOneYear"
+              value={underOneYear}
+              onChange={handleValue}
+              checked={underOneYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionFirstOption}>Under 1 Year</p>
-              </div>
+                <p className={styles.thirdSectionFirstOption}>Under 1 Year</p>
+              </section>
 
-            <div className={styles.thirdSectionsecOptionContainer}>
+            <section className={styles.thirdSectionsecOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionsecOption} 
-            type="checkbox"
-            name="oneOrTwoYear"
-            value={oneOrTwoYear}
-            onChange={handleValue}
-            checked={oneOrTwoYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionsecOption} 
+              type="checkbox"
+              name="oneOrTwoYear"
+              value={oneOrTwoYear}
+              onChange={handleValue}
+              checked={oneOrTwoYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionsecOption}>1 - 2 Years</p>
-              </div>
+                <p className={styles.thirdSectionsecOption}>1 - 2 Years</p>
+              </section>
 
-            <div className={styles.thirdSectionthirdOptionContainer}>
+            <section className={styles.thirdSectionthirdOptionContainer}>
 
-            <input 
-            placeholder='gg' 
-            className={styles.inputOfthirdSectionthirdOption} 
-            type="checkbox"
-            name="twoToSixYear"
-            value={twoToSixYear}
-            onChange={handleValue}
-            checked={twoToSixYear?"checked":""}
-            />
+              <Form.Check
+              placeholder='gg' 
+              className={styles.inputOfthirdSectionthirdOption} 
+              type="checkbox"
+              name="twoToSixYear"
+              value={twoToSixYear}
+              onChange={handleValue}
+              checked={twoToSixYear?"checked":""}
+              />
 
-              <p className={styles.thirdSectionthirdOption}>2 - 6 Years</p>
-              </div>
+                <p className={styles.thirdSectionthirdOption}>2 - 6 Years</p>
+              </section>
 
-            <div className={styles.thirdSectionfourthOptionContainer}>
+            <section className={styles.thirdSectionfourthOptionContainer}>
 
-            <input 
+            <Form.Check
             placeholder='gg' 
             className={styles.inputOfthirdSectionfourthOption} 
             type="checkbox"
@@ -502,14 +515,14 @@ const Sidebar = () => {
             />
 
               <p className={styles.thirdSectionfourthOption}>Over 6 Years</p>
-              </div>
+              </section>
 
           </div>
 
         </div>
 
       </div>
-    </div>
+    </main>
   )
 }
 

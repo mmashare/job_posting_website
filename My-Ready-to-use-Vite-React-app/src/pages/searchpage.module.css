@@ -13,6 +13,13 @@
   }
 
 
+  @media only screen and (min-width: 1px) and (max-width: 300px) {
+    .Container{
+      display: none;
+      background-color: #444;
+    }
+  }
+
 @media only screen and (min-width: 300px) and (max-width: 500px) {
 
     .Container{

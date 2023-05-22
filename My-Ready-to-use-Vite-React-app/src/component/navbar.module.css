@@ -142,6 +142,23 @@
 
     .BtnContainer{
         height: 2.1rem;
+        width: 15rem;
+        /* background-color: #e2e8f0; */
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:auto;
+        margin-bottom: auto;
+        margin-right: 1%;
+        /* margin-left: 1%; */
+        /* border-radius: 3px;
+        border: none;
+        border: 1px #111727 solid; */
+    }
+    .LoginAndSignupContainer{
+        height: 2.1rem;
         width: 11rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
@@ -157,7 +174,6 @@
         border: none;
         border: 1px #111727 solid;
     }
-
     .LoginBTn{
         height: 1.9rem;
         width: 5rem;
@@ -172,18 +188,21 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiLoginBtn{
         height: 1.9rem;
         width: 5rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         margin-right: 0.3rem;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .SignupBTn{
         height: 1.9rem;
@@ -192,11 +211,13 @@
         /* background-color: #e2e8f0; */
         /* background-color: #94a3b8; */
         background-color: #f3f3f3;
+        color: #111727;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiSignupBtn{
         height: 1.9rem;
@@ -204,12 +225,17 @@
         /* background-color: #94a3b8; */ 
         /* background-color: #268d61; */
         background-color: #111727;
+       
         color: #f3f3f3;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
+    }
+    .searchBtnContainer{
+        display: none;
     }
 }
 
@@ -242,7 +268,7 @@
     }
     .ProfileContainer{
         height: 100%;
-        width: 11rem;
+        width: 4rem;
         /* background-color: aqua; */
         margin-right: 2%;
         cursor: pointer;
@@ -343,9 +369,9 @@
 
     .BtnContainer{
         height: 2.1rem;
-        width: 11rem;
-        /* background-color: #e2e8f0; */
-        background-color: #f3f3f3;
+        width: 15rem;
+        /* background-color: #7cec12; */
+        /* background-color: #f3f3f3; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -355,10 +381,20 @@
         margin-right: 5%;
         /* margin-left: 1%; */
         border-radius: 3px;
+        /* border: none;
+        outline: #111727 1px solid; */
+    }
+    .LoginAndSignupContainer{
+        height: 2.1rem;
+        width: 11rem;
+        border-radius: 3px;
         border: none;
         outline: #111727 1px solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-
     .LoginBTn{
         height: 1.9rem;
         width: 5rem;
@@ -373,18 +409,21 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiLoginBtn{
         height: 1.9rem;
         width: 5rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         margin-right: 0.3rem;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .SignupBTn{
         height: 1.9rem;
@@ -392,11 +431,13 @@
         /* background-color: #94a3b8; */
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiSignupBtn{
         height: 1.9rem;
@@ -411,8 +452,28 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
 
+    .searchBtnContainer{
+        height: 2.1rem;
+        width: 2rem;
+        /* background-color: crimson; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .searchBTn{
+        height: 1.5rem;
+        width: 1.5rem;
+        /* background-color: rgb(200, 220, 20); */
+        cursor: pointer;
+       
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -446,7 +507,7 @@
 
     .ProfileContainer{
         height: 100%;
-        width: 11rem;
+        width: 4rem;
         /* background-color: aqua; */
         margin-right: 2%;
         cursor: pointer;
@@ -545,7 +606,7 @@
 
     .BtnContainer{
         height: 2.1rem;
-        width: 11rem;
+        width: 15rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
         display: flex;
@@ -556,10 +617,20 @@
         margin-bottom: auto;
         margin-right: 5%;
         /* margin-left: 1%; */
-        border-radius: 3px;
-        border: 1px #111727 solid;
+        /* border-radius: 3px; */
+        /* border: 1px #111727 solid; */
     }
-
+    .LoginAndSignupContainer{
+        height: 2.1rem;
+        width: 11rem;
+        border-radius: 3px;
+        border: none;
+        outline: #111727 1px solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .LoginBTn{
         height: 1.9rem;
         width: 5rem;
@@ -574,18 +645,21 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiLoginBtn{
         height: 1.9rem;
         width: 5rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         margin-right: 0.3rem;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .SignupBTn{
         height: 1.9rem;
@@ -593,11 +667,13 @@
         /* background-color: #94a3b8; */
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiSignupBtn{
         height: 1.9rem;
@@ -612,8 +688,27 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
-
+    .searchBtnContainer{
+        height: 2.1rem;
+        width: 2rem;
+        /* background-color: crimson; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .searchBTn{
+        height: 1.5rem;
+        width: 1.5rem;
+        /* background-color: rgb(200, 220, 20); */
+        cursor: pointer;
+       
+    }
 }
 
 
@@ -626,7 +721,7 @@
         background-color: #f3f3f3;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-around; */
         overflow-x:hidden;
         box-sizing: border-box;
     }
@@ -647,7 +742,7 @@
 
     .ProfileContainer{
         height: 100%;
-        width: 11rem;
+        width: 4rem;
         /* background-color: aqua; */
         margin-right: 2%;
         cursor: pointer;
@@ -661,7 +756,7 @@
         margin-left: auto;
         margin-top: 0.7rem;
         margin-bottom: 0.5rem;
-
+            
     }
 
     .ProfileImg{
@@ -746,7 +841,7 @@
 
     .BtnContainer{
         height: 2.1rem;
-        width: 11rem;
+        width: 15rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
         display: flex;
@@ -757,10 +852,20 @@
         margin-bottom: auto;
         margin-right: 5%;
         /* margin-left: 1%; */
-        border-radius: 3px;
-        border: 1px #111727 solid;
+        /* border-radius: 3px; */
+        /* border: 1px #111727 solid; */
     }
-
+    .LoginAndSignupContainer{
+        height: 2.1rem;
+        width: 11rem;
+        border-radius: 3px;
+        border: none;
+        outline: #111727 1px solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .LoginBTn{
         height: 1.9rem;
         width: 5rem;
@@ -775,18 +880,21 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiLoginBtn{
         height: 1.9rem;
         width: 5rem;
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         margin-right: 0.3rem;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .SignupBTn{
         height: 1.9rem;
@@ -794,11 +902,13 @@
         /* background-color: #94a3b8; */
         /* background-color: #e2e8f0; */
         background-color: #f3f3f3;
+        color: #111727;
         border-radius: 5px;
         border: none;
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
     .semiSignupBtn{
         height: 1.9rem;
@@ -813,6 +923,25 @@
         outline: none;
         display: flex;
         align-items: center;
+        font-weight: 600;
     }
 
+    .searchBtnContainer{
+        height: 2.1rem;
+        width: 2rem;
+        /* background-color: crimson; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .searchBTn{
+        height: 1.5rem;
+        width: 1.5rem;
+        /* background-color: rgb(200, 220, 20); */
+       cursor: pointer;
+    }
 }

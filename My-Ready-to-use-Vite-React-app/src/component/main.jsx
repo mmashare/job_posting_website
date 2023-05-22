@@ -11,21 +11,21 @@ const Main = ({id,jobName,companyName,jobType,experience,employment,location,job
 
  
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
 
       
 
-      <div className={styles.wrapper1}>
+      <section className={styles.wrapper1}>
 
-      <div className={styles.logoContainer}>
+      <figure className={styles.logoContainer}>
         <img src={companyIMg || Image} className={styles.Img}/>
-      </div>
+      </figure>
 
       <div className={styles.smallWrapper}>
 
       <div className={styles.titleContainer}>
         {/* company title */}
-        <h3 className={styles.JobHeading} style={{color:"#0c0c0c"}}>{jobName}</h3>
+        <h3 className={styles.JobHeading}>{jobName}</h3>
       </div>
 
       <div className={styles.companyNameContainer}>
@@ -35,14 +35,14 @@ const Main = ({id,jobName,companyName,jobType,experience,employment,location,job
 
       </div>
 
-      <div className={styles.smallScreenSaveBTn}>
-        {/* it's the save btn that this div have for only mobile responsive, on bigger screeen it is display none */}
+     {/* it's the save btn that this div have for only mobile responsive, on bigger screeen it is display none */}
+      {/* <div className={styles.smallScreenSaveBTn}> 
       <BookmarkIcon className={styles.realBtn}/>
-      </div>
+      </div> */}
 
-      </div>
+      </section>
 
-      <div className={styles.wrapper2}>
+      <section className={styles.wrapper2}>
 
       <div className={styles.jobTypeContainer}>
         {/* job type ex-> fulltime or part time */}
@@ -59,7 +59,7 @@ const Main = ({id,jobName,companyName,jobType,experience,employment,location,job
         <p className={styles.employment}>{employment} </p>
       </div>
 
-      </div>
+      </section>
 
       <div className={styles.wrapper3}>
 
@@ -73,16 +73,17 @@ const Main = ({id,jobName,companyName,jobType,experience,employment,location,job
         <p className={styles.jobTime}>{moment(jobTime).format('DD/MM/YYYY')} </p>
       </div>
 
-      <div className={styles.BigScreenJobSaveBTN}>
-        {/* job save button that only seen on big screen on small screen it's disabled */}
+     {/* job save button that only seen on big screen on small screen it's disabled */}
+      {/* <div className={styles.BigScreenJobSaveBTN}>
+       
         <BookmarkIcon className={styles.realBtn}/>
-      </div>
+      </div> */}
 
       </div>
 
       
       
-    </div>
+    </main>
   )
 }
 

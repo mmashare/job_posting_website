@@ -22,13 +22,13 @@ const Search = ({title,setTitle,location,setLocation,jobGetter,isDisible,text})=
 
 
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles.ContainerinputOFJobTitle} style={{border:"1px solid #D6D5D5",boxShadow:"0.5px 0.5px 1px #010101"}}><MagnifyingGlassIcon className={styles.searchIcon}/><input placeholder={isDisible?'Go to search page':'Search'} className={styles.inputOFJobTitle} value={title} onChange={handleTitle} disabled={isDisible?"disabled":""}/></div>
-        <div className={styles.ContainerinputOFLocation} style={{border:"1px solid #D6D5D5",boxShadow:"0.5px 0.5px 1px #010101"}}><HomeIcon className={styles.homeIcon}/><input placeholder={isDisible?'Go to search page':'Location'} className={styles.inputOFLocation} value={location} onChange={handleLocation} disabled={isDisible?"disabled":""}/></div>
+    <main className={styles.container}>
+      <section className={styles.wrapper}>
+        <section className={styles.ContainerinputOFJobTitle} style={{border:"1px solid #D6D5D5",boxShadow:"0.5px 0.5px 1px #010101"}}><MagnifyingGlassIcon className={styles.searchIcon}/><input placeholder={isDisible?'Go to search page':'Search'} className={styles.inputOFJobTitle} value={title} onChange={handleTitle} disabled={isDisible?"disabled":""}/></section>
+        <section className={styles.ContainerinputOFLocation} style={{border:"1px solid #D6D5D5",boxShadow:"0.5px 0.5px 1px #010101"}}><HomeIcon className={styles.homeIcon}/><input placeholder={isDisible?'Go to search page':'Location'} className={styles.inputOFLocation} value={location} onChange={handleLocation} disabled={isDisible?"disabled":""}/></section>
         <Link to="/search"><button className={styles.searchBTn} style={{border:"none",outline:"none"}} onClick={jobGetter}>{text?"Go to search":"Search"}</button></Link>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 

@@ -232,10 +232,10 @@ const Profilepage = () => {
     },[toogleForJobApply === true,toogleSavedjob === true ])
 
   return (
-    <div className={styles.container}>
-        <div className={styles.navbarContainer}>
+    <main className={styles.container}>
+        <nav className={styles.navbarContainer}>
             <Navbar/>
-        </div>
+        </nav>
         <div className={styles.upperContainer}>
             {/* banner img */}
             <div className={styles.bannerImgContainer} >
@@ -266,7 +266,7 @@ const Profilepage = () => {
            { companyToggle?
                 (
                     // here we post job
-                    <div className={styles.sidebarContainer}>
+                    <section className={styles.sidebarContainer}>
 
                     <div className={styles.optionContainer1}>
                         {/* showJobOrCompany jab false hoga to job show hogi and when showJobOrCompany true hoga tab company show hogi */}
@@ -275,11 +275,11 @@ const Profilepage = () => {
                         <button className={styles.jobCreateBtn} style={{outline:"none"}} onClick={()=>{setToggleJobCreate(true)}}>Create</button>
                     </div>
                     
-                    </div>
+                    </section>
                 ):
                 (
                     // here we only look for job and apply for job
-                <div className={styles.sidebarContainer}>
+                <section className={styles.sidebarContainer}>
 
                        <div className={styles.optionContainer}>
                             <p className={toogleForJobApply?styles.SemijobAppliedBTn:styles.jobAppliedBTn} onClick={HandleToogleForJobApply}> Applied Jobs</p>
@@ -287,7 +287,7 @@ const Profilepage = () => {
                             {/* <p className={toogleFollowCompany?styles.SemifollowedCompanyBtn:styles.followedCompanyBtn} onClick={HandleToogleForFollowCompany}> Followed Companies </p> */}
                        </div>
 
-                </div>     
+                </section>     
                 
             )}
 
@@ -295,7 +295,7 @@ const Profilepage = () => {
             <div className={styles.jobSeeSection}>
             {allJob && allJob.map((h,i)=>{
                 console.log(h)
-                    return (<div key={i} style={{backgroundColor:"#f3f3f3"}}>
+                    return (<article key={i} style={{backgroundColor:"#f3f3f3"}}>
                        <Link to={`/job/${h._id}`}> <Main
                         id={h._id}
                         jobName={h.title}
@@ -307,7 +307,7 @@ const Profilepage = () => {
                         jobTime={h.createdAt}
                         companyIMg={h.CompanyImg}
                         /></Link>
-                    </div>)
+                    </article>)
                 })}
             </div>
 
@@ -339,7 +339,7 @@ const Profilepage = () => {
                 {/* <p className={CompanyPostToogle?styles.SelectedCompanySelect:styles.companySelect} onClick={HandleToogleForCompanyPost}>Company</p> */}
             </div>
 
-            <div className={styles.UpdateDeatilsContainer} style={{height:"29rem"}}>
+            <section className={styles.UpdateDeatilsContainer} style={{height:"29rem"}}>
             <input className={styles.UpdateDeatilsNameInput} placeholder="Company Name" style={{outline:"none",height:"2rem"}} value={jobData.CompanyName} onChange={(e)=>{setJobData({...jobData,CompanyName:e.target.value})}}/>
                 <input className={styles.UpdateDeatilsNameInput} placeholder="Job Title" style={{outline:"none",height:"2rem"}} value={jobData.title} onChange={(e)=>{setJobData({...jobData,title:e.target.value})}}/>
                 <textarea className={styles.UpdateDeatilsEmailInput} placeholder="Description" style={{outline:"none",height:"4rem",resize: "none"}} value={jobData.simpleDescription} onChange={(e)=>{setJobData({...jobData,simpleDescription:e.target.value})}}/>
@@ -350,7 +350,7 @@ const Profilepage = () => {
                         <p className={styles.profileImg} style={{marginLeft:"10px"}}>Company Logo</p>
                         <input placeholder='gg' className={styles.inputwrapper2} type="file" style={{marginLeft:"10px"}} onChange={(e) => UploadImages(e.target.files[0])}/>
                 </div>
-                <div className={styles.optionofIndustryLabelContainer}>
+                <section className={styles.optionofIndustryLabelContainer}>
 
                     <select id="indsType" className={styles.optionofIndustrySelect} style={{border:"none",outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c"}} onChange={(e)=>{setJobData({...jobData,experience:e.target.value})}}>
                     <option value="ITS" className={styles.optionofIndustryOpt} style={{border:"none",outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c"}} disabled>Experience</option>
@@ -359,18 +359,18 @@ const Profilepage = () => {
                     <option value="2-6 Years" className={styles.optionofIndustryOpt}>2-6 Years</option>
                     <option value="Over 6 Years" className={styles.optionofIndustryOpt}>Over 6 Years</option>
                     </select>
-                </div>
+                </section>
                 {/* employmentType */}
-                <div className={styles.optionofIndustryLabelContainer}>
+                <section className={styles.optionofIndustryLabelContainer}>
 
                     <select id="emptype" className={styles.optionofIndustrySelect} style={{border:"none",outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c"}} onChange={(e)=>{setJobData({...jobData,employmentType:e.target.value})}}>
                     <option value="Emptype" className={styles.optionofIndustryOpt} style={{border:"none",outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c"}} disabled>Employment Type</option>
                     <option value="Remote" className={styles.optionofIndustryOpt}>Remote</option>
                     <option value="onSite" className={styles.optionofIndustryOpt}>On-site</option>
                     </select>
-                </div>
+                </section>
                 {/* jobtype */}
-                <div className={styles.optionofIndustryLabelContainer}>
+                <section className={styles.optionofIndustryLabelContainer}>
 
                     <select id="jobtype" className={styles.optionofIndustrySelect} style={{border:"none",outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c"}} onChange={(e)=>{setJobData({...jobData,jobtype:e.target.value})}}>
                     <option value="jobtype" className={styles.optionofIndustryOpt} style={{border:"none",outline:"none",backgroundColor:"#f3f3f3",color:"#0c0c0c"}} disabled>Job Type</option>
@@ -378,15 +378,15 @@ const Profilepage = () => {
                     <option value="Full-time" className={styles.optionofIndustryOpt}>Full-Time</option>
                     <option value="Internship" className={styles.optionofIndustryOpt}>Intership</option>
                     </select>
-                </div>
+                </section>
                 <button className={styles.UpdateDeatilsBtn} style={{outline:"none"}} onClick={CreateJobFunc}>Update</button>
-            </div>
+            </section>
            
 
             </div>
             :""}
         </div>
-    </div>
+    </main>
   )
 }
 

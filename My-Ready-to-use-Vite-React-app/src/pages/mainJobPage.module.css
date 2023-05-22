@@ -56,6 +56,14 @@
     src: url("../assets//SFPRODISPLAYREGULAR.OTF");
   }
 
+
+  @media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+      display: none;
+      background-color: #444;
+    }
+  }
+  
 @media only screen and (min-width: 300px) and (max-width: 500px) {
 
 .container{
@@ -123,7 +131,7 @@
 }
 .companyLogoSection{
     height: 5rem;
-    width: 30%;
+    width: 20%;
     /* background-color: rgb(175, 164, 7); */
     display: flex;
     align-items: center;
@@ -131,10 +139,10 @@
 }
 .CompanyPRofileImg{
     height: 4rem;
-    width: 4rem;
+    width: 4.5rem;
     border-radius: 50%;
-    margin-right: 3px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 14px;
 }
 .companyTitleSection{
     height: 5rem;
@@ -146,10 +154,10 @@
     height: auto;
     min-height: 1rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 5px;
     font-family: sf-meduim;
-    
+    margin-top: 20px;
 }
 .companyTitle{
     height: auto;
@@ -275,7 +283,7 @@
 
 }
 .Question{
-    height: 2rem;
+    height: 1rem;
     width: 100%;
     font-size: 1rem;
     margin-left: 15px;
@@ -288,7 +296,7 @@
     
 }
 .Answer{
-    height: 2rem;
+    height: 1rem;
     width: 100%;
     font-size: 1rem;
     margin-left: 15px;
@@ -312,6 +320,9 @@
     align-items: center;
     justify-content: center;
     outline: none;
+    background-color: #f3f3f3;
+    outline: none;
+    text-decoration: none;
 }
 
 
@@ -399,7 +410,7 @@
     }
     .CompanyPRofileImg{
         height: 4rem;
-        width: 4rem;
+        width: 4.5rem;
         border-radius: 50%;
         margin-right: 3px;
         margin-left: auto;
@@ -414,10 +425,10 @@
         height: auto;
         min-height: 1rem;
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-left: 5px;
         font-family: sf-meduim;
-        
+        margin-top: 20px;
     }
     .companyTitle{
         height: auto;
@@ -448,15 +459,16 @@
         min-height: 3rem;
         height: auto;
         width: 95%;
-        /* background-color: rgb(255, 0, 221); */
+        /* background-color: #ffffff; */
         margin-top: 4px;
         margin-left: auto;
         margin-right: auto;
         
+        
     }
     
     .SimpleDescription{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             padding-left: 5px;
             padding-top: 5px;
             padding-right: 5px;
@@ -477,7 +489,7 @@
     
     
     .jobResponsiblity{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding-left: 5px;
         padding-top: 5px;
         padding-right: 5px;
@@ -498,7 +510,7 @@
     }
     
     .RequireSkill{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding-left: 5px;
         padding-top: 5px;
         padding-right: 5px;
@@ -543,7 +555,7 @@
     
     }
     .Question{
-        height: 2rem;
+        height: 1rem;
         width: 100%;
         font-size: 1rem;
         margin-left: 15px;
@@ -556,7 +568,7 @@
         
     }
     .Answer{
-        height: 2rem;
+        height: 1rem;
         width: 100%;
         font-size: 1rem;
         margin-left: 15px;
@@ -572,6 +584,7 @@
         width: 25rem;
         border: 1px solid #0c0c0c;
         color: #0c0c0c;
+        background-color: #f3f3f3;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
@@ -668,7 +681,7 @@
     }
     .CompanyPRofileImg{
         height: 4rem;
-        width: 4rem;
+        width: 4.5rem;
         border-radius: 50%;
         margin-right: 3px;
         margin-left: auto;
@@ -683,9 +696,10 @@
         height: auto;
         min-height: 1rem;
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-left: 5px;
         font-family: sf-meduim;
+        margin-top: 20px;
     }
     .companyTitle{
         height: auto;
@@ -814,7 +828,7 @@
     
     }
     .Question{
-        height: 2rem;
+        height: 1rem;
         width: 100%;
         font-size: 1rem;
         margin-left: 15px;
@@ -827,7 +841,7 @@
         
     }
     .Answer{
-        height: 2rem;
+        height: 1rem;
         width: 100%;
         font-size: 1rem;
         margin-left: 15px;
@@ -843,6 +857,7 @@
         width: 15rem;
         border: 1px solid #0c0c0c;
         color: #0c0c0c;
+        background-color: #f3f3f3;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
@@ -933,6 +948,7 @@
     .companyLogoSection{
         height: 5rem;
         width: 15%;
+        
         /* background-color: rgb(175, 164, 7); */
         display: flex;
         align-items: center;
@@ -940,7 +956,7 @@
     }
     .CompanyPRofileImg{
         height: 4rem;
-        width: 4rem;
+        width: 4.5rem;
         border-radius: 50%;
         margin-right: 3px;
         margin-left: auto;
@@ -955,17 +971,17 @@
         height: auto;
         min-height: 1rem;
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 1.8rem;
         font-weight: 700;
         margin-left: 5px;
         font-family: sf-meduim;
-        
+        margin-top: 15px;
     }
     .companyTitle{
         height: auto;
         min-height: 0.5rem;
         font-size: 0.8rem;
-        margin-top: 1px;
+        margin-top: 0px;
         margin-left: 5px;
         font-weight: 300;
         font-family: sf-meduim;
@@ -1089,7 +1105,7 @@
     
     }
     .Question{
-        height: 2rem;
+        height: 1rem;
         width: 100%;
         font-size: 1rem;
         margin-left: 15px;
@@ -1102,7 +1118,7 @@
         
     }
     .Answer{
-        height: 2rem;
+        height: 1rem;
         width: 100%;
         font-size: 1rem;
         margin-left: 15px;
@@ -1119,6 +1135,7 @@
         width: 15rem;
         border: 1px solid #0c0c0c;
         color: #0c0c0c;
+        background-color: #f3f3f3;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;

@@ -7,6 +7,7 @@ import NotFound from './component/NotFound.jsx'
 import styles from './App.module.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchPage from './pages/searchPage.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 

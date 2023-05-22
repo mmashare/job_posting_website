@@ -6,6 +6,12 @@
     padding: 0px;
 }
 
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+      display: none;
+      background-color: #444;
+    }
+  }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
 
     .container{
@@ -41,14 +47,27 @@
         background-color: #f3f3f3;
     }
     .SidebarContainer{
-        height: 4rem;
+        height: 3rem;
         width: 100%;
         /* background-color: rgb(247, 141, 11); */
+        background-color: #e8eaee;
         background-color: #f3f3f3;
-        margin: 0rem;
+        margin: 0px;
         padding: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
-
+    .searchBTn{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 10px;
+      /* background-color: aquamarine; */
+      margin-right: 15px;
+      cursor: pointer;
+       
+    }
     .JobContainer{
         height: 21rem;
         width: 100%;
@@ -155,7 +174,9 @@
         margin: 0rem;
         padding: 0rem;
     }
-
+    .searchBTn{
+        display: none;
+    }
     .JobContainer{
         min-height: 25rem;
         max-height: auto;
@@ -212,7 +233,9 @@
         margin: 0rem;
         padding: 0rem;
     }
-
+    .searchBTn{
+        display: none;
+    }
     .JobContainer{
         min-height: 25rem;
         max-height: auto;

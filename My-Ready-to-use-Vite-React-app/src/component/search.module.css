@@ -12,6 +12,7 @@
     font-family: sf-regular;
     src: url("../assets//SFPRODISPLAYREGULAR.OTF");
   }
+
 @media only screen and (min-width: 300px) and (max-width: 500px) {
 
     .container{
@@ -19,7 +20,7 @@
         width: 100%;
         margin: 0px;
         /* padding-top: 2rem; */
-        /* background-color: rgb(15, 15, 94); */
+        /* background-color: #ffffff */
     }
 
     .wrapper{
@@ -65,6 +66,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
+        background-color: #f3f3f3;
+        color: #444;
     }
     .ContainerinputOFLocation{
         height: 2.1rem;
@@ -96,6 +99,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
+        background-color: #f3f3f3;
+        color: #444;
         
     }
     
@@ -170,6 +175,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
+        background-color: #f3f3f3;
+        color: #444;
     }
     .ContainerinputOFLocation{
         height: 2.1rem;
@@ -201,7 +208,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
-        
+        background-color: #f3f3f3;
+        color: #444;
     }
     
     .searchBTn{
@@ -281,6 +289,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
+        background-color: #f3f3f3;
+        color: #444;
     }
     .ContainerinputOFLocation{
         height: 2.1rem;
@@ -312,7 +322,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
-        
+        background-color: #f3f3f3;
+        color: #444;
     }
     
     .searchBTn{
@@ -387,6 +398,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
+        background-color: #f3f3f3;
+        color: #444;
     }
     .ContainerinputOFLocation{
         height: 2.1rem;
@@ -418,7 +431,8 @@
         border: none;
         font-family: sf-meduim;
         font-weight: 500;
-        
+        background-color: #f3f3f3;
+        color: #444;
     }
     
     .searchBTn{

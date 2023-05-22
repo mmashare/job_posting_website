@@ -13,6 +13,14 @@
     src: url("../assets//SFPRODISPLAYREGULAR.OTF");
   }
 
+
+  @media only screen and (min-width: 1px) and (max-width: 300px) {
+    .container{
+      display: none;
+      background-color: #444;
+    }
+  }
+  
 @media only screen and (min-width: 300px) and (max-width: 500px) {
 
 .container{
@@ -1519,7 +1527,7 @@
         display: flex;
         align-items: center;
         margin-left: 10px;
-    
+        margin-top: 15px
     }
     
     .verifiedIcon{
