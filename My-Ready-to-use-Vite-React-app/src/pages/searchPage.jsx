@@ -55,7 +55,7 @@ const SearchPage = () => {
             />
             </aside>
         <section className={styles.jobsContainer}>
-            {allJobs && allJobs.map((h,i)=>{
+            {allJobs ? allJobs.map((h,i)=>{
                         return (<figure key={i} style={{backgroundColor:"#ffffff"}}>
                             <Link to={`/job/${h._id}`}>
                                 <Main
@@ -70,7 +70,7 @@ const SearchPage = () => {
                                 />
                                 </Link>
                         </figure>)
-                            })}
+                            }):<div className={styles.loader}>Empty</div>}
         </section>
     </main>
   )

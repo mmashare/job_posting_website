@@ -138,7 +138,7 @@ const Home = () => {
                 <MagnifyingGlassIcon className={styles.searchBTn} onClick={()=>{navigate('/search')}}/>
             </aside>
             <div className={styles.JobContainer}>
-                {allJobs && allJobs.map((h,i)=>{
+                {allJobs?allJobs.map((h,i)=>{
                     return (<article key={i} style={{backgroundColor:"#ffffff"}}>
                       <Link to={`/job/${h._id}`}>
                         <Main
@@ -154,7 +154,7 @@ const Home = () => {
                         />
                         </Link>
                     </article>)
-                })}
+                }):<div className={styles.loader}></div>}
                 
             
             </div>

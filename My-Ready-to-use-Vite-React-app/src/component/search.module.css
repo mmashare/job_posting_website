@@ -39,7 +39,7 @@
     .ContainerinputOFJobTitle{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         display: flex;
         flex-direction: row;
         border-radius: 5px;
@@ -48,7 +48,7 @@
     .searchIcon{
         height: 1.3rem;
         width: 1.3rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 1px;
@@ -72,7 +72,7 @@
     .ContainerinputOFLocation{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-top: 0.5rem;
         display: flex;
         flex-direction: row;
@@ -148,7 +148,7 @@
     .ContainerinputOFJobTitle{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         display: flex;
         flex-direction: row;
         border-radius: 5px;
@@ -157,7 +157,7 @@
     .searchIcon{
         height: 1.3rem;
         width: 1.3rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 1px;
@@ -181,7 +181,7 @@
     .ContainerinputOFLocation{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-top: 0.5rem;
         display: flex;
         flex-direction: row;
@@ -262,7 +262,7 @@
     .ContainerinputOFJobTitle{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         display: flex;
         flex-direction: row;
         border-radius: 5px;
@@ -271,7 +271,7 @@
     .searchIcon{
         height: 1.3rem;
         width: 1.3rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 1px;
@@ -295,7 +295,7 @@
     .ContainerinputOFLocation{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-left: 0.5rem;
         display: flex;
         flex-direction: row;
@@ -310,6 +310,7 @@
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 3px;
+        background-color: #f3f3f3;
     }
     .inputOFLocation{
         height: 2rem;
@@ -371,7 +372,7 @@
     .ContainerinputOFJobTitle{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         display: flex;
         flex-direction: row;
         border-radius: 5px;
@@ -380,7 +381,7 @@
     .searchIcon{
         height: 1.3rem;
         width: 1.3rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 1px;
@@ -404,7 +405,7 @@
     .ContainerinputOFLocation{
         height: 2.1rem;
         width: 16rem;
-        background-color: #f8f8f8;
+        background-color: #f3f3f3;
         margin-left: 0.5rem;
         display: flex;
         flex-direction: row;
@@ -418,12 +419,12 @@
         background-color: none;
         margin-top: auto;
         margin-bottom: auto;
+        background-color: #f3f3f3;
         margin-left: 3px;
     }
     .inputOFLocation{
         height: 2rem;
         width: 14rem;
-        
         border-radius: 3px;
         padding-left: 7px;
         padding-right: 3px;

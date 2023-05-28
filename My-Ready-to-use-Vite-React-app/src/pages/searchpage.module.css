@@ -79,6 +79,19 @@
         font-family: sf-bold-1;
         margin-top: 15px;
     }
+
+    .loader {
+        
+        background-color: #f3f3f3;
+        /* background-color: #e90606; */
+        color: #444;
+        font-family: sf-regular;
+        font-size: 3rem;
+        margin-inline: auto;
+        height: min-content;
+        width: min-content;
+        
+      }
 }
 
 
@@ -140,6 +153,19 @@
         font-family: sf-bold-1;
         margin-top: 15px;
     }
+
+    .loader {
+        
+        background-color: #f3f3f3;
+        /* background-color: #e90606; */
+        color: #444;
+        font-family: sf-regular;
+        font-size: 3rem;
+        margin-inline: auto;
+        height: min-content;
+        width: min-content;
+        
+      }
 }
 
 
@@ -203,6 +229,19 @@
         font-family: sf-bold-1;
         margin-top: 15px;
     }
+
+    .loader {
+        
+        background-color: #f3f3f3;
+        /* background-color: #e90606; */
+        color: #444;
+        font-family: sf-regular;
+        font-size: 3rem;
+        margin-inline: auto;
+        height: min-content;
+        width: min-content;
+        
+      }
 }
 
 
@@ -266,4 +305,18 @@
         font-family: sf-bold-1;
         margin-top: 15px;
     }
+
+    .loader {
+        
+        background-color: #ffffff;
+        /* background-color: #e90606; */
+        color: #444;
+        font-family: sf-regular;
+        font-size: 3rem;
+        margin-inline: auto;
+        height: min-content;
+        width: min-content;
+        
+      }
+      
 }

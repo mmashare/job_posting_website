@@ -177,16 +177,6 @@ const Sidebar = () => {
           <div className={styles.FirstOptionSection}>
             <section className={styles.FirstSectionFirstOptionContainer}>
 
-              {/* <input 
-              placeholder='gg' 
-              className={styles.inputOfFirstSectionFirstOptionContainer} 
-              type="checkbox"
-              name="fulltime"
-              value={fulltime}
-              onChange={handleValue}
-              checked={fulltime?"checked":""}
-              /> */}
-
                 <Form.Check 
                   placeholder='gg' 
                   className={styles.inputOfFirstSectionFirstOptionContainer} 
@@ -195,10 +185,11 @@ const Sidebar = () => {
                   value={fulltime}
                   onChange={handleValue}
                   checked={fulltime?"checked":""}
+                  id="Full-Time"
                 />
 
 
-                <p className={styles.FirstSectionFirstOption}>Full-Time</p>
+                <label className={styles.FirstSectionFirstOption} for="Full-Time">Full-Time</label>
               </section>
             <section className={styles.FirstSectionSecOptionContainer}>
               <Form.Check
@@ -209,8 +200,9 @@ const Sidebar = () => {
               value={parttime}
               onChange={handleValue}
               checked={parttime?"checked":""}
+              id="Part-Time"
               />
-                <p className={styles.FirstSectionSecOption}>Part-Time</p>
+                <label className={styles.FirstSectionSecOption} for="Part-Time">Part-Time</label>
               </section>
             <section className={styles.FirstSectionThirdOptionContainer}>
               <Form.Check
@@ -221,8 +213,9 @@ const Sidebar = () => {
               value={intership}
               onChange={handleValue}
               checked={intership?"checked":""}
+              id="Intership"
               />
-                <p className={styles.FirstSectionThirdOption}>Intership</p>
+                <label className={styles.FirstSectionThirdOption} for="Intership">Intership</label>
               </section>
           </div>
 
@@ -247,9 +240,10 @@ const Sidebar = () => {
               value={remote}
               onChange={handleValue}
               checked={remote?"checked":""}
+              id="Remote"
               />
 
-                <p className={styles.SecSectionFirstOption}>Remote</p>
+                <label className={styles.SecSectionFirstOption} for="Remote">Remote</label>
               </section>
 
             <section className={styles.SecSectionsecOptionContainer}>
@@ -262,9 +256,10 @@ const Sidebar = () => {
               value={onsite}
               onChange={handleValue}
               checked={onsite?"checked":""}
+              id="On-site"
               />
 
-                <p className={styles.SecSectionsecOption}>On-site</p>
+                <label className={styles.SecSectionsecOption} for="On-site">On-site</label>
               </section>
               
           </div>
@@ -289,9 +284,10 @@ const Sidebar = () => {
               value={underOneYear}
               onChange={handleValue}
               checked={underOneYear?"checked":""}
+              id="Under1Year"
               />
 
-                <p className={styles.thirdSectionFirstOption}>Under 1 Year</p>
+                <label className={styles.thirdSectionFirstOption} for="Under1Year">Under 1 Year</label>
               </section>
 
             <section className={styles.thirdSectionsecOptionContainer}>
@@ -304,9 +300,10 @@ const Sidebar = () => {
               value={oneOrTwoYear}
               onChange={handleValue}
               checked={oneOrTwoYear?"checked":""}
+              id="1-2Years"
               />
 
-                <p className={styles.thirdSectionsecOption}>1 - 2 Years</p>
+                <label className={styles.thirdSectionsecOption} for="1-2Years">1 - 2 Years</label>
               </section>
 
             <section className={styles.thirdSectionthirdOptionContainer}>
@@ -319,9 +316,10 @@ const Sidebar = () => {
               value={twoToSixYear}
               onChange={handleValue}
               checked={twoToSixYear?"checked":""}
+              id="2-6Years"
               />
 
-                <p className={styles.thirdSectionthirdOption}>2 - 6 Years</p>
+                <label className={styles.thirdSectionthirdOption} for="2-6Years">2 - 6 Years</label>
               </section>
 
             <section className={styles.thirdSectionfourthOptionContainer}>
@@ -334,9 +332,10 @@ const Sidebar = () => {
               value={overSixYear}
               onChange={handleValue}
               checked={overSixYear?"checked":""}
+              id="Over6Years"
               />
 
-                <p className={styles.thirdSectionfourthOption}>Over 6 Years</p>
+                <label className={styles.thirdSectionfourthOption} for="Over6Years">Over 6 Years</label>
               </section>
 
           </div>
@@ -372,9 +371,10 @@ const Sidebar = () => {
                 value={fulltime}
                 onChange={handleValue}
                 checked={fulltime?"checked":""}
+                id="Full-Time"
                 />
 
-                <p className={styles.FirstSectionFirstOption}>Full-Time</p>
+                <label for="Full-Time" className={styles.FirstSectionFirstOption}>Full-Time</label>
               </section>
             <section className={styles.FirstSectionSecOptionContainer}>
 
@@ -386,9 +386,10 @@ const Sidebar = () => {
               value={parttime}
               onChange={handleValue}
               checked={parttime?"checked":""}
+              id="Part-Time"
               />
 
-                <p className={styles.FirstSectionSecOption}>Part-Time</p>
+                <label for="Part-Time" className={styles.FirstSectionSecOption}>Part-Time</label>
               </section>
             <section className={styles.FirstSectionThirdOptionContainer}>
 
@@ -400,9 +401,10 @@ const Sidebar = () => {
               value={intership}
               onChange={handleValue}
               checked={intership?"checked":""}
+              id="Intership"
               />
 
-                <p className={styles.FirstSectionThirdOption}>Intership</p>
+                <label className={styles.FirstSectionThirdOption} for="Intership">Intership</label>
               </section>
           </div>
 
@@ -427,9 +429,10 @@ const Sidebar = () => {
               value={remote}
               onChange={handleValue}
               checked={remote?"checked":""}
+              id="Remote"
               />
 
-                <p className={styles.SecSectionFirstOption}>Remote</p>
+                <label className={styles.SecSectionFirstOption} for="Remote">Remote</label>
               </section>
 
             <section className={styles.SecSectionsecOptionContainer}>
@@ -441,8 +444,9 @@ const Sidebar = () => {
               value={onsite}
               onChange={handleValue}
               checked={onsite?"checked":""}
+              id="On-site"
               />
-                <p className={styles.SecSectionsecOption}>On-site</p>
+                <label className={styles.SecSectionsecOption} for="On-site">On-site</label>
               </section>
               
           </div>
@@ -467,9 +471,10 @@ const Sidebar = () => {
               value={underOneYear}
               onChange={handleValue}
               checked={underOneYear?"checked":""}
+              id="Under 1 Year"
               />
 
-                <p className={styles.thirdSectionFirstOption}>Under 1 Year</p>
+                <label className={styles.thirdSectionFirstOption} for="Under 1 Year">Under 1 Year</label>
               </section>
 
             <section className={styles.thirdSectionsecOptionContainer}>
@@ -482,9 +487,10 @@ const Sidebar = () => {
               value={oneOrTwoYear}
               onChange={handleValue}
               checked={oneOrTwoYear?"checked":""}
+              id="1-2 Years"
               />
 
-                <p className={styles.thirdSectionsecOption}>1 - 2 Years</p>
+                <label className={styles.thirdSectionsecOption} for="1-2 Years">1 - 2 Years</label>
               </section>
 
             <section className={styles.thirdSectionthirdOptionContainer}>
@@ -497,9 +503,10 @@ const Sidebar = () => {
               value={twoToSixYear}
               onChange={handleValue}
               checked={twoToSixYear?"checked":""}
+              id="2-6 Years"
               />
 
-                <p className={styles.thirdSectionthirdOption}>2 - 6 Years</p>
+                <label className={styles.thirdSectionthirdOption} for="2-6 Years">2 - 6 Years</label>
               </section>
 
             <section className={styles.thirdSectionfourthOptionContainer}>
@@ -512,9 +519,10 @@ const Sidebar = () => {
             value={overSixYear}
             onChange={handleValue}
             checked={overSixYear?"checked":""}
+            id="Over6Years"
             />
 
-              <p className={styles.thirdSectionfourthOption}>Over 6 Years</p>
+              <label className={styles.thirdSectionfourthOption} for="Over6Years">Over 6 Years</label>
               </section>
 
           </div>
